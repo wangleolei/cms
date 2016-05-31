@@ -1,0 +1,154 @@
+[ 2016-04-08T10:14:08+08:00 ] 127.0.0.1 /Public/js/echarts-2.2.1/build/dist/theme/blue.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.046875s ]
+SQL: SELECT * FROM `fc_admin_setting` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_cache` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_cache` WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\Program Files\PHPStudy\WWW\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `fc_admin_cache` SET `name`='bfa226da317a2ec6552f24bcfdd197dd',`title`='缓存',`namespace`='Admin\\Model\\SettingModel',`function`='getSetting',`args`='a:1:{i:0;i:3;}',`creattime`='1460081648',`long`='0',`clear`='0' WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' [ RunTime:0.0000s ]
+INFO: Run Content\Behavior\RouteBehavior [ RunTime:0.015625s ]
+INFO: [ app_init ] --END-- [ RunTime:0.062500s ]
+ERR: 无法加载模块:Public
+
+[ 2016-04-08T10:14:13+08:00 ] 127.0.0.1 /Public/js/echarts-2.2.1/build/dist/theme/blue.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.046875s ]
+SQL: SELECT * FROM `fc_admin_setting` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_cache` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_cache` WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\Program Files\PHPStudy\WWW\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `fc_admin_cache` SET `name`='bfa226da317a2ec6552f24bcfdd197dd',`title`='缓存',`namespace`='Admin\\Model\\SettingModel',`function`='getSetting',`args`='a:1:{i:0;i:3;}',`creattime`='1460081653',`long`='0',`clear`='0' WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' [ RunTime:0.0000s ]
+INFO: Run Content\Behavior\RouteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.046875s ]
+ERR: 无法加载模块:Public
+
+[ 2016-04-08T10:16:03+08:00 ] 127.0.0.1 /Public/modules/home/images/week/feed.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0156s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.125000s ]
+SQL: SELECT * FROM `fc_admin_setting` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_cache` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_cache` WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\Program Files\PHPStudy\WWW\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `fc_admin_cache` SET `name`='bfa226da317a2ec6552f24bcfdd197dd',`title`='缓存',`namespace`='Admin\\Model\\SettingModel',`function`='getSetting',`args`='a:1:{i:0;i:3;}',`creattime`='1460081763',`long`='0',`clear`='0' WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' [ RunTime:0.0000s ]
+INFO: Run Content\Behavior\RouteBehavior [ RunTime:0.015625s ]
+INFO: [ app_init ] --END-- [ RunTime:0.156250s ]
+ERR: 无法加载模块:Public
+
+[ 2016-04-08T10:16:48+08:00 ] 127.0.0.1 /Public/modules/home/images/portal/area_01.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0156s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.125000s ]
+SQL: SELECT * FROM `fc_admin_setting` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_cache` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_cache` WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\Program Files\PHPStudy\WWW\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `fc_admin_cache` SET `name`='bfa226da317a2ec6552f24bcfdd197dd',`title`='缓存',`namespace`='Admin\\Model\\SettingModel',`function`='getSetting',`args`='a:1:{i:0;i:3;}',`creattime`='1460081808',`long`='0',`clear`='0' WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' [ RunTime:0.0156s ]
+INFO: Run Content\Behavior\RouteBehavior [ RunTime:0.031250s ]
+INFO: [ app_init ] --END-- [ RunTime:0.156250s ]
+ERR: 无法加载模块:Public
+
+[ 2016-04-08T10:17:31+08:00 ] 127.0.0.1 /Public/modules/home/images/portal/left_sel_03.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0156s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.046875s ]
+SQL: SELECT * FROM `fc_admin_setting` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_cache` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_cache` WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\Program Files\PHPStudy\WWW\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `fc_admin_cache` SET `name`='bfa226da317a2ec6552f24bcfdd197dd',`title`='缓存',`namespace`='Admin\\Model\\SettingModel',`function`='getSetting',`args`='a:1:{i:0;i:3;}',`creattime`='1460081851',`long`='0',`clear`='0' WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' [ RunTime:0.0156s ]
+INFO: Run Content\Behavior\RouteBehavior [ RunTime:0.031250s ]
+INFO: [ app_init ] --END-- [ RunTime:0.078125s ]
+ERR: 无法加载模块:Public
+
+[ 2016-04-08T10:22:19+08:00 ] 127.0.0.1 /Public/modules/home/images/week/feed.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0156s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.062500s ]
+SQL: SELECT * FROM `fc_admin_setting` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_cache` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_cache` WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\Program Files\PHPStudy\WWW\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `fc_admin_cache` SET `name`='bfa226da317a2ec6552f24bcfdd197dd',`title`='缓存',`namespace`='Admin\\Model\\SettingModel',`function`='getSetting',`args`='a:1:{i:0;i:3;}',`creattime`='1460082139',`long`='0',`clear`='0' WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' [ RunTime:0.0000s ]
+INFO: Run Content\Behavior\RouteBehavior [ RunTime:0.015625s ]
+INFO: [ app_init ] --END-- [ RunTime:0.078125s ]
+ERR: 无法加载模块:Public
+
+[ 2016-04-08T10:22:19+08:00 ] 127.0.0.1 /Public/modules/home/images/portal/left_sel_03.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0156s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.046875s ]
+SQL: SELECT * FROM `fc_admin_setting` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_cache` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_cache` WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\Program Files\PHPStudy\WWW\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `fc_admin_cache` SET `name`='bfa226da317a2ec6552f24bcfdd197dd',`title`='缓存',`namespace`='Admin\\Model\\SettingModel',`function`='getSetting',`args`='a:1:{i:0;i:3;}',`creattime`='1460082139',`long`='0',`clear`='0' WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' [ RunTime:0.0000s ]
+INFO: Run Content\Behavior\RouteBehavior [ RunTime:0.031250s ]
+INFO: [ app_init ] --END-- [ RunTime:0.093750s ]
+ERR: 无法加载模块:Public
+
+[ 2016-04-08T10:22:37+08:00 ] 127.0.0.1 /Public/modules/home/images/bds_sqq01.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.031250s ]
+SQL: SELECT * FROM `fc_admin_setting` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_cache` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_cache` WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\Program Files\PHPStudy\WWW\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `fc_admin_cache` SET `name`='bfa226da317a2ec6552f24bcfdd197dd',`title`='缓存',`namespace`='Admin\\Model\\SettingModel',`function`='getSetting',`args`='a:1:{i:0;i:3;}',`creattime`='1460082157',`long`='0',`clear`='0' WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' [ RunTime:0.0000s ]
+INFO: Run Content\Behavior\RouteBehavior [ RunTime:0.015625s ]
+INFO: [ app_init ] --END-- [ RunTime:0.046875s ]
+ERR: 无法加载模块:Public
+
+[ 2016-04-08T10:22:37+08:00 ] 127.0.0.1 /Public/modules/home/images/bds_tsina01.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.031250s ]
+SQL: SELECT * FROM `fc_admin_setting` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_cache` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_cache` WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\Program Files\PHPStudy\WWW\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `fc_admin_cache` SET `name`='bfa226da317a2ec6552f24bcfdd197dd',`title`='缓存',`namespace`='Admin\\Model\\SettingModel',`function`='getSetting',`args`='a:1:{i:0;i:3;}',`creattime`='1460082157',`long`='0',`clear`='0' WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' [ RunTime:0.0000s ]
+INFO: Run Content\Behavior\RouteBehavior [ RunTime:0.015625s ]
+INFO: [ app_init ] --END-- [ RunTime:0.046875s ]
+ERR: 无法加载模块:Public
+
+[ 2016-04-08T10:22:37+08:00 ] 127.0.0.1 /Public/modules/home/images/bds_weixin01.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0156s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.046875s ]
+SQL: SELECT * FROM `fc_admin_setting` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_cache` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_cache` WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\Program Files\PHPStudy\WWW\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `fc_admin_cache` SET `name`='bfa226da317a2ec6552f24bcfdd197dd',`title`='缓存',`namespace`='Admin\\Model\\SettingModel',`function`='getSetting',`args`='a:1:{i:0;i:3;}',`creattime`='1460082157',`long`='0',`clear`='0' WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' [ RunTime:0.0156s ]
+INFO: Run Content\Behavior\RouteBehavior [ RunTime:0.015625s ]
+INFO: [ app_init ] --END-- [ RunTime:0.062500s ]
+ERR: 无法加载模块:Public
+
+[ 2016-04-08T10:22:38+08:00 ] 127.0.0.1 /Public/modules/home/images/bds_qzone01.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.046875s ]
+SQL: SELECT * FROM `fc_admin_setting` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_cache` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_cache` WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\Program Files\PHPStudy\WWW\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `fc_admin_cache` SET `name`='bfa226da317a2ec6552f24bcfdd197dd',`title`='缓存',`namespace`='Admin\\Model\\SettingModel',`function`='getSetting',`args`='a:1:{i:0;i:3;}',`creattime`='1460082158',`long`='0',`clear`='0' WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' [ RunTime:0.0000s ]
+INFO: Run Content\Behavior\RouteBehavior [ RunTime:0.015625s ]
+INFO: [ app_init ] --END-- [ RunTime:0.078125s ]
+ERR: 无法加载模块:Public
+

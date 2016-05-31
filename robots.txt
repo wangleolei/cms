@@ -1,0 +1,11 @@
+#
+# robots.txt for thinkerphp
+#
+User-agent: * 
+Disallow: /Common
+Disallow: /Conf
+Disallow: /Modules
+Disallow: /Public
+Disallow: /ThinkPHP
+Disallow: /Runtime
+Disallow: /Uploads

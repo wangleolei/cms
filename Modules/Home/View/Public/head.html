@@ -1,0 +1,61 @@
+<div id="hd" style="background:#FFF; height:80px;">
+  <div class="clear"></div>
+  <div id="week_nav">
+    <div class="wk_navwp">
+      <div class="">
+        <div class="wk_logo">
+          <h2><a href="{:C('site_host')}/" title="ThinkerCMS"><img src="/Public/modules/home/images/logo.png" alt="ThinkerCMS" border="0" /></a></h2>
+        </div>
+        <div class="wk_inav">
+          <ul class="nav">
+            <li <if condition="$index">class="a"</if> id="mn_portal" onmouseover="showMenu({'ctrlid':this.id,'ctrlclass':'hover','duration':2})"><a href="{:C('site_host')}/" hidefocus="true" title="首页"  >首页<span>home</span></a></li>
+            <PHP>$cats=$d_category->getChildren(0);</PHP>
+            <volist name="cats" id="vo">
+            <li <if condition="$catid eq $vo['id'] or $parentid eq $vo['id']">class="a"</if> id="mn_P{$vo['id']}" onmouseover="showMenu({'ctrlid':this.id,'ctrlclass':'hover','duration':2})"><a href="{$vo['url']?$vo['url']:UN('lists',array('catid'=>$vo['id']))}" hidefocus="true" >{$vo.name}</a></li>
+            </volist>
+          </ul>
+        </div>
+<!--        <div class="wk_idl">
+          <div id="header_user">
+            <ul id="header_nav">
+              <li> <span class="wk_lh60"><a class="login_block wk_dl" href="member.php?mod=logging&amp;action=login&amp;referer=" onclick="showWindow('login', this.href);return false;" title="登录" id="wk_dl" onMouseOver="showMenu({'ctrlid':this.id,'ctrlclass':'a'})">登录</a></span> <span class="wk_lh60"><a class="login_block wk_zc btn-register" href="member.php?mod=register" title="注册">注册</a></span> </li>
+            </ul>
+          </div>
+        </div>-->
+        <div class="wk_t_tel"> <span>{$siteinfo.phone}</span> </div>
+      </div>
+    </div>
+  </div>
+</div>
+<ul class="sub_menu" id="wk_dl_menu" style="display: none;">
+  <li><a href="connect.php?mod=login&amp;op=init&amp;referer=index.php&amp;statfrom=login" title="QQ登录"><span class="i_qq"></span>QQ登录</a></li>
+  <li><a href="plugin.php?id=wechat:login" title="微信登录"><span class="i_wx"></span>微信登录</a></li>
+  <li><a href="plugin.php?id=ljxlwb&amp;opp=in" title="微博登录"><span class="i_wb"></span>微博登录</a></li>
+</ul>
+<div class="sub_nav">
+	<div class="p_pop h_pop" id="mn_userapp_menu" style="display: none"></div>
+<!--  <ul class="p_pop h_pop" id="mn_portal_menu" style="display: none">
+    <li><a href="" hidefocus="true" target="_blank" >购买模板</a></li>
+  </ul>-->
+  <ul class="p_pop h_pop" id="mn_P1_menu" style="display: none">
+  	<PHP>$arts=$d_content->getContentList(array('modelid'=>1,'catid'=>1));</PHP>
+    <volist name="arts" id="vo">
+    <li><a href="{:UN('detail',array('catid'=>1,'id'=>$vo['id']))}" hidefocus="true" >{$vo['title']}</a></li>
+    </volist>
+  </ul>
+ <volist name="cats" id="vo1"> 
+ <PHP>$cats=$d_category->getChildren($vo1['id']);</PHP>
+ <if condition="$cats">
+  <ul class="p_pop h_pop" id="mn_P{$vo1.id}_menu" style="display: none">	
+    <volist name="cats" id="vo">
+    <li><a href="{:UN('lists',array('catid'=>$vo['id']))}" hidefocus="true" >{$vo.name}</a></li>
+    </volist>
+  </ul>
+  </if>
+</volist>
+  <!--<ul class="p_pop h_pop" id="mn_forum_2_menu" style="display: none">
+    <li><a href="forum.php?mod=forumdisplay&fid=38" hidefocus="true" >社区活动</a></li>
+    <li><a href="forum.php?mod=forumdisplay&fid=41" hidefocus="true" >瀑布流</a></li>
+  </ul>-->
+</div>
+<script src="/Public/modules/home/js/week_nav.js" type="text/javascript"></script>

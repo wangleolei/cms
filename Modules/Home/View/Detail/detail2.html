@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$info.title} - {$name}</title>
+<meta name="keywords" content="{$info.keywords}" />
+<meta name="description" content="{$info.description}" />
+<meta http-equiv="MSThemeCompatible" content="Yes" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<link rel="stylesheet" type="text/css" href="/Public/modules/home/css/style_2_common.css?Jvw" />
+<link rel="stylesheet" type="text/css" href="/Public/modules/home/css/style_2_portal_view.css?Jvw" />
+<script src="/Public/modules/home/js/common.js?Jvw" type="text/javascript"></script>
+<script src="/Public/modules/home/js/jquery-1.7.2.js" type="text/javascript"></script>
+<script src="/Public/modules/home/js/pace.js" type="text/javascript"></script>
+<link href="/Public/modules/home/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<include file="Public/head" />
+<div class="wk_head_banner">
+  <div class="wk_portalhead_bn2">
+    <div class="wk_portalhead_bg">
+      <h1><a>{$name}</a></h1>
+      <div class="clear"></div>
+      <p>优秀人才最优惠，平庸之人最昂贵</p>
+      <div class="clear"></div>
+      <ul>
+        <li><a href="{:UN('lists',array('catid'=>$parentid))}" title="{$name}">全部</a></li>
+        <PHP>$cats=$d_category->getChildren($parentid);</PHP>
+        <volist name="cats" id="vo">
+        <li><a href="{:UN('lists',array('catid'=>$vo['id']))}" title="{$vo.name}" <if condition="$vo['id'] eq $catid">class="a"</if>>{$vo.name}</a></li>
+        </volist>
+      </ul>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
+<div class="wk_ymbg">
+  <div id="wp" class="wp">
+    <div class="wp"> 
+      <!--[diy=diy1]-->
+      <div id="diy1" class="area"></div>
+      <!--[/diy]--> 
+    </div>
+    <div id="ct" class="ct2 wp cl">
+      <div class="wk_c_right_name">
+        <div class="wk_c_right_name_l"> </div>
+        <div class="wk_c_right_name_r">
+          <ul>
+            <li> <img src="/Public/modules/home/images/right_wz.png" alt="" /> </li>
+            <li> <span>您现在的位置：</span> <span><a href="{:C('site_host')}/">首页</a></span> <span>→</span> <span><a href="{:UN('lists?catid='.$parentid)}">{$pname}</a> </span><span>→</span> <span><a href="{:UN('lists?catid='.$catid)}">{$name}</a></span> <span>→</span> <span>查看内容</span> </li>
+          </ul>
+        </div>
+      </div>
+      <div class="bm vw">
+        <div class="h hm wk_hm">
+          <h1 class="ph">{$info.title}</h1>
+          <p class="xg1"> {:date('Y-m-d H:i',$info['inputtime'])}<span class="pipe">|</span> 发布者: <a href="#">admin</a><!--<span class="pipe">|</span> 查看: <em id="_viewnum">43</em><span class="pipe">|</span> 评论: 0--></p>
+        </div>
+        
+        <!--[diy=diysummarytop]-->
+        <div id="diysummarytop" class="area"></div>
+        <!--[/diy]--> 
+        
+        <!--[diy=diysummarybottom]-->
+        <div id="diysummarybottom" class="area"></div>
+        <!--[/diy]-->
+        
+        <div class="d"> 
+          
+          <!--[diy=diycontenttop]-->
+          <div id="diycontenttop" class="area"></div>
+          <!--[/diy]-->
+          
+          {$info.content}
+          
+          <!--[diy=diycontentbottom]-->
+          <div id="diycontentbottom" class="area"></div>
+          <!--[/diy]--> 
+          
+          <script src="static/js/home.js?Jvw" type="text/javascript"></script> 
+          
+          <!--[diy=diycontentclickbottom]-->
+          <div id="diycontentclickbottom" class="area"></div>
+          <!--[/diy]--> 
+          
+        </div>
+        <div class="o cl ptm pbm wk_hm">
+          <div class="z">
+            <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdPic":"","bdStyle":"0","bdSize":"16"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>  
+          </div>
+          <!--<div class="y"> <a href="home.php?mod=spacecp&amp;ac=favorite&amp;type=article&amp;id=167&amp;handlekey=favoritearticlehk_167" id="a_favorite" onclick="showWindow(this.id, this.href, 'get', 0);" class="oshr ofav">收藏</a> <a href="home.php?mod=spacecp&amp;ac=share&amp;type=article&amp;id=167&amp;handlekey=sharearticlehk_167" id="a_share" onclick="showWindow(this.id, this.href, 'get', 0);" class="oshr">分享</a> <a href="misc.php?mod=invite&amp;action=article&amp;id=167" id="a_invite" onclick="showWindow('invite', this.href, 'get', 0);" class="oshr oivt">邀请</a> </div>-->
+        </div>
+        		  <if condition="$info['prve']">
+          <div class="pren pbm cl"> 
+			  <em>上一篇：<a href="{:UN('detail',array('catid'=>$catid,'id'=>$info['prve']['id']))}">{$info.prve.title}</a></em>
+		  </div>
+		  </if>
+		  <if condition="$info['next']">
+		  <div class="pren pbm cl">
+		      <em>下一篇：<a href="{:UN('detail',array('catid'=>$catid,'id'=>$info['next']['id']))}">{$info.next.title}</a></em>
+		  </div>
+		  </if>
+      </div>
+      
+      <!--[diy=diycontentrelatetop]-->
+      <div id="diycontentrelatetop" class="area"></div>
+      <!--[/diy]--><!--[diy=diycontentrelate]-->
+      <div id="diycontentrelate" class="area"></div>
+      <!--[/diy]--> 
+      
+      <!--[diy=diycontentcomment]-->
+      <div id="diycontentcomment" class="area"></div>
+      <!--[/diy]--> 
+    </div>
+  </div>
+  <div class="wp mtn"> 
+    <!--[diy=diy3]-->
+    <div id="diy3" class="area"></div>
+    <!--[/diy]--> 
+  </div>
+  <input type="hidden" id="portalview" value="1">
+</div>
+<script type="text/javascript">
+_attachEvent(window, 'load', getForbiddenFormula, document);
+function getForbiddenFormula() {
+var toGetForbiddenFormulaFIds = function () {
+ajaxget('plugin.php?id=cloudsearch&formhash=1e0fac23');
+};
+var a = document.body.getElementsByTagName('a');
+for(var i = 0;i < a.length;i++){
+if(a[i].getAttribute('sc')) {
+a[i].setAttribute('mid', hash(a[i].href));
+a[i].onmousedown = function() {toGetForbiddenFormulaFIds();};
+}
+}
+var btn = document.body.getElementsByTagName('button');
+for(var i = 0;i < btn.length;i++){
+if(btn[i].getAttribute('sc')) {
+btn[i].setAttribute('mid', hash(btn[i].id));
+btn[i].onmousedown = function() {toGetForbiddenFormulaFIds();};
+}
+}
+}
+</script>
+<include file="Public/footer" />
+<include file="Public/main-im" />
+</html>

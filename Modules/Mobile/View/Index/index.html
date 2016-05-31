@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)" name="viewport">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection">
+    <title>{$seo_title}</title>
+    <meta name="keywords" content="{$seo_keywords}" />
+    <meta name="description" content="{$seo_description}" />
+    <link rel="stylesheet" type="text/css" href="/Public/modules/mobile/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="/Public/modules/mobile/css/common-mobile.css">
+    <link rel="stylesheet" type="text/css" href="/Public/modules/mobile/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/Public/modules/mobile/css/submit.css">
+    <script type="text/javascript" src='/Public/modules/mobile/js/jquery-1.8.3.min.js'></script>
+    <script type="text/javascript" src='/Public/modules/mobile/js/swiper.min.js'></script>
+    <script type="text/javascript" src='/Public/modules/mobile/js/public.js'></script>
+    <script type="text/javascript" src='/Public/modules/mobile/js/common.js'></script>
+    <script>
+        //微信tel失效问题,去除sukey
+        if(navigator.userAgent.indexOf('MicroMessenger')!=-1){
+            var shref=window.location.href;
+            if(shref.indexOf('wxref=mp.weixin.qq.com')==-1)window.location.href+=shref.indexOf('?')==-1?'?wxref=mp.weixin.qq.com':'&wxref=mp.weixin.qq.com';
+        }
+        //ios7 不用webapp
+        (function(){
+            if(/(iPhone|iPad)\sOS\s7_/.test(window.navigator.userAgent)){
+                var t=document.head.querySelector('meta[name="apple-mobile-web-app-capable"]');
+                if(t)t.remove();
+            }
+        })()
+
+        function getCookieObj(){
+            var ary=document.cookie.split(/;\s?/),cookieObj={};
+            for(var i=0,n=ary.length;i<n;i++){
+                var t=ary[i].split('=');
+                if(t.length==2)cookieObj[t[0]]=t[1];
+            }
+            return cookieObj;
+        }
+        (function(){
+            var defaultImgMode=window.localStorage.getItem('browseMode');
+            if(defaultImgMode&&defaultImgMode!='close'){
+                var imgMode=getCookieObj().imgDispMode;
+                if(imgMode=='pq'){
+                    document.write('<link id="hdLink" rel="stylesheet" type="text/css" href="/Public/modules/mobile/css/common_hd480.css">');
+                }else if(imgMode=='gq'){
+                    document.write('<link id="hdLink" rel="stylesheet" type="text/css" href="/Public/modules/mobile/css/common_hd640.css">');
+                }else if(!imgMode){
+                    if(defaultImgMode=='gq'){
+                        var dpr=window.devicePixelRatio;
+                        if(dpr>1.5){
+                            document.write('<link id="hdLink" rel="stylesheet" type="text/css" href="/Public/modules/mobile/css/common_hd640.css">');
+                        }else{
+                            document.write('<link id="hdLink" rel="stylesheet" type="text/css" href="/Public/modules/mobile/css/common_hd480.css">');
+                        }
+                    }
+                }
+            }
+        })()
+
+        var CompInit=function(){
+            var initFuncs={};
+            var requireJsAry=[];
+            return {
+                addCompInit:function(key,opts){
+                    if(opts.initFunc){
+                        initFuncs[key]=opts.initFunc;
+                    }
+                    if(opts.requireJs){
+                        requireJsAry.push(opts.requireJs);
+                    }
+                },
+                initAll:function(fn){
+                    fn({requireJsAry:requireJsAry,initFuncs:initFuncs})
+                }
+            }
+        }()
+
+    </script>
+    <script type="text/javascript">
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+            };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
+    </head>
+    <body>
+<!-- wrapper --> 
+<!-- header -->
+
+<header>
+      <div class="logo"><a href="/"><img src="/Public/modules/mobile/images/logo.png" alt=""></a></div>
+      <div class="category"><a href="javascript:;"></a></div>
+    </header>
+
+<!-- header end -->
+
+<section class='content' style="background-color:#eee;">
+      <div class="banner">
+    <div class="swiper-container">
+          <div class="swiper-wrapper">
+        <volist name="adds" id="vo">
+              <div class="swiper-slide"><a href="{$vo.url}"><img src="{:thumb_url($vo['src'],800,800)}" alt="{$vo.title}"></a></div>
+            </volist>
+      </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+  </div>
+      <div class="jz-service conmmon-part" id='page2'>
+    <h2><span>微信功能</span><!--<a href="/productlist">More</a>--></h2>
+    <ul class="clearfix">
+          <li> <a href="javascript:;">
+            <div class="img"><img src="/Public/modules/mobile/images/part2-img1.png" alt=""></div>
+            <p>在线测评</p>
+            </a> </li>
+          <li> <a href="javascript:;">
+            <div class="img"><img src="/Public/modules/mobile/images/part2-img2.png" alt=""></div>
+            <p>用户签到</p>
+            </a> </li>
+          <li> <a href="javascript:;">
+            <div class="img"><img src="/Public/modules/mobile/images/part2-img3.png" alt=""></div>
+            <p>调查投票</p>
+            </a> </li>
+          <li> <a href="javascript:;">
+            <div class="img"><img src="/Public/modules/mobile/images/part2-img4.png" alt=""></div>
+            <p>猜图游戏</p>
+            </a> </li>
+          <li> <a href="javascript:;">
+            <div class="img"><img src="/Public/modules/mobile/images/part2-img5.png" alt=""></div>
+            <p>在线客服</p>
+            </a> </li>
+          <li> <a href="javascript:;">
+            <div class="img"><img src="/Public/modules/mobile/images/part2-img6.png" alt=""></div>
+            <p>自动回复</p>
+            </a> </li>
+        </ul>
+  </div>
+      <!--<div class="case-enjoy conmmon-part" id='page3'>
+    <h2><span>案例欣赏</span><a href="/case">More</a></h2>
+    <ul class="clearfix">
+          <li> <a href="/case/914.html">
+            <div class="img"><img src="/attach/case/buy2buyupfile/201563015244624198s.jpg" alt=""></div>
+            <p class='case-name'>宾县张亮麻辣烫...</p>
+            <p class='case-trade'>行业：餐饮/食品</p>
+            </a> </li>
+          <li> <a href="/case/104161.html">
+            <div class="img"><img src="/attach/case//20151215/566f9c3790217.png" alt=""></div>
+            <p class='case-name'>全卖网-网上家居...</p>
+            <p class='case-trade'>行业：家具建材/百货</p>
+            </a> </li>
+        </ul>
+  </div>-->
+      <div class="zqdl-content" id='page4'>
+    <ul class='hd clearfix'>
+          <li class="active"><em></em>ThinkerCMS</li>
+          <li><em></em>帮助中心</li>
+          <li class="last"><em></em>常见问题</li>
+        </ul>
+    <div class="bd">
+          <ul class='bd clearfix'>
+        <li class="active">
+              <h3>为什么选择ThinkerCMS？</h3>
+              <div class="txt-con">
+            <div class='txt-con-item1'>
+                  <h4>thinkphp3.2内核</h4>
+                  <p>ThinkerCMS采用thinkphp3.2内核，未做任何改动，容易二次开发</p>
+                </div>
+            <div class='txt-con-item2'>
+                  <h4>仿phpcms</h4>
+                  <p>ThinkerCMS前期仿的国内成熟的phpcms，延续了phpcms优秀的用户体验</p>
+                </div>
+            <div class='txt-con-item3'>
+                  <h4>快速二次开发</h4>
+                  <p>只要懂thinkphp就能快速的对thinkercms进行二次开发</p>
+                </div>
+          </div>
+            </li>
+        <li>
+              <ul class="zixun-list">
+              <PHP>$vals=$d_content->getContentList(array('modelid'=>1,'catid'=>21,'limit'=>4));</PHP>
+              <volist name="vals" id="vo">
+            <li> <a href="{:UN('detail',array('catid'=>21,'id'=>$vo['id']))}">
+              <h4>{$vo.title}</h4>
+              <p>{$vo.description}</p>
+              </a> </li>
+              </volist>
+          </ul>
+            </li>
+        <li class="last">
+              <ul class="zixun-list">
+              <PHP>$vals=$d_content->getContentList(array('modelid'=>1,'catid'=>15,'limit'=>4));</PHP>
+              <volist name="vals" id="vo">
+              <li> <a href="{:UN('detail',array('catid'=>21,'id'=>$vo['id']))}">
+              <h4>{$vo.title}</h4>
+              <p>{$vo.description}</p>
+              </a> </li>
+              </volist>
+          </ul>
+            </li>
+      </ul>
+        </div>
+  </div>
+    </section>
+    <script>
+        var swiper1 = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            slidesPerView: 1,
+            paginationClickable: true,
+            spaceBetween: 30,
+            loop: true
+        });
+
+    </script>    
+<include file="Public/footer" />  
+</body>

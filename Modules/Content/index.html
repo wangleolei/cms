@@ -1,0 +1,14 @@
+<script type="text/javascript">function crop_cut_thumb(src){
+	if ($.trim(src)=='') { window.top.art.dialog.alert('请先上传缩略图');return false;}
+	window.top.art.dialog.open('/Plug/Public/cropzoom.html?picurl='+encodeURIComponent(src),{title:'裁切图片', id:'crop', width:690, height:420,lock:true,ok:function(){
+		var iframe = this.iframe.contentWindow;
+		var obj = iframe.document;
+		var src=$(obj).find("#generated").attr('src');
+		if(src!='')
+		{
+			$("#thumb_preview").attr('src',src);
+			$("#thumb").val(src);
+		}
+		return true;
+		},cancel:function(){window.top.art.dialog({id:'crop'}).close()}});
+}</script> 

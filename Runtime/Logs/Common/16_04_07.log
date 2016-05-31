@@ -1,0 +1,56 @@
+[ 2016-04-07T23:43:33+08:00 ] 127.0.0.1 /powerone/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.031250s ]
+INFO: [ app_init ] --END-- [ RunTime:0.031250s ]
+ERR: 无法加载模块:Powerone
+
+[ 2016-04-07T23:44:20+08:00 ] 127.0.0.1 /Public/js/echarts-2.2.1/build/dist/theme/blue.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0156s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.062500s ]
+INFO: [ app_init ] --END-- [ RunTime:0.062500s ]
+ERR: 无法加载模块:Public
+
+[ 2016-04-07T23:44:26+08:00 ] 127.0.0.1 /Public/js/echarts-2.2.1/build/dist/theme/blue.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.031250s ]
+INFO: [ app_init ] --END-- [ RunTime:0.031250s ]
+ERR: 无法加载模块:Public
+
+[ 2016-04-07T23:46:12+08:00 ] 127.0.0.1 /Public/js/echarts-2.2.1/build/dist/theme/blue.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.031250s ]
+INFO: [ app_init ] --END-- [ RunTime:0.031250s ]
+ERR: 无法加载模块:Public
+
+[ 2016-04-07T23:46:49+08:00 ] 127.0.0.1 /Public/modules/home/images/week/feed.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.109375s ]
+INFO: [ app_init ] --END-- [ RunTime:0.109375s ]
+ERR: 无法加载模块:Public
+
+[ 2016-04-07T23:47:02+08:00 ] 127.0.0.1 /Public/modules/home/images/portal/area_01.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0313s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.140625s ]
+INFO: [ app_init ] --END-- [ RunTime:0.140625s ]
+ERR: 无法加载模块:Public
+
+[ 2016-04-07T23:48:07+08:00 ] 192.168.1.122 /powerone/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.093750s ]
+INFO: [ app_init ] --END-- [ RunTime:0.093750s ]
+ERR: 无法加载模块:Powerone
+

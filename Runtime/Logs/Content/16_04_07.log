@@ -1,0 +1,497 @@
+[ 2016-04-07T23:43:24+08:00 ] 127.0.0.1 /Content/Content/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.109375s ]
+INFO: [ app_init ] --END-- [ RunTime:0.109375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: Run Admin\Behavior\RecordBeginBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::error() should be compatible with that of Think\Controller::error() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::success() should be compatible with that of Think\Controller::success() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `fc_admin_menu` [ RunTime:0.0156s ]
+NOTIC: [2] Missing argument 1 for Admin\Classes\AdminController::_get_data(), called in D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php on line 210 and defined D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 242 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Content' AND `c` = 'Content' AND `a` = 'index' AND `data` = '' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Content' AND `c` = 'Content' AND `a` = 'index' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_content_model` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fc_content_model` WHERE `disabled` = 0  [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Admin\Classes\AdminController::admin_tpl(), called in D:\Program Files\PHPStudy\WWW\Modules\Content\Controller\ContentController.class.php on line 21 and defined D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 113 行.
+NOTIC: [8] Undefined variable: name D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 115 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_behavior` [ RunTime:0.0156s ]
+SQL: INSERT INTO `fc_admin_behavior` (`uid`,`timelong`,`memory`,`time`,`date1`,`date2`,`m`,`c`,`a`,`ip`,`data`) VALUES ('1','0.078125','474','1460043804','2016-04-07','2016-04-07 23','Content','Content','index','127.0.0.1','') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\RecordEndBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2016-04-07T23:43:25+08:00 ] 127.0.0.1 /Content/Content/public_category.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0156s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.046875s ]
+INFO: [ app_init ] --END-- [ RunTime:0.046875s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Admin\Behavior\RecordBeginBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::error() should be compatible with that of Think\Controller::error() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::success() should be compatible with that of Think\Controller::success() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `fc_admin_menu` [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Admin\Classes\AdminController::_get_data(), called in D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php on line 210 and defined D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 242 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Content' AND `c` = 'Content' AND `a` = 'public_category' AND `data` = '' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Content' AND `c` = 'Content' AND `a` = 'public_category' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_content_category` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fc_content_category` WHERE `url` = '' ORDER BY listorder DESC  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: from D:\Program Files\PHPStudy\WWW\Modules\Content\Controller\ContentController.class.php 第 365 行.
+NOTIC: [8] Undefined variable: ajax_show D:\Program Files\PHPStudy\WWW\Modules\Content\Controller\ContentController.class.php 第 374 行.
+NOTIC: [2] Missing argument 1 for Admin\Classes\AdminController::admin_tpl(), called in D:\Program Files\PHPStudy\WWW\Modules\Content\Controller\ContentController.class.php on line 378 and defined D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 113 行.
+NOTIC: [8] Undefined variable: name D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 115 行.
+NOTIC: [2] Missing argument 1 for load_artdialog(), called in D:\Program Files\PHPStudy\WWW\Modules\Content\templates\Content\public_category.php on line 1 and defined D:\Program Files\PHPStudy\WWW\Common\load_front_plug.php 第 39 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_behavior` [ RunTime:0.0156s ]
+SQL: INSERT INTO `fc_admin_behavior` (`uid`,`timelong`,`memory`,`time`,`date1`,`date2`,`m`,`c`,`a`,`ip`,`data`) VALUES ('1','0.15625','618','1460043805','2016-04-07','2016-04-07 23','Content','Content','public_category','127.0.0.1','') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\RecordEndBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2016-04-07T23:43:53+08:00 ] 127.0.0.1 /Content/Content/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0156s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.046875s ]
+INFO: [ app_init ] --END-- [ RunTime:0.046875s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Admin\Behavior\RecordBeginBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::error() should be compatible with that of Think\Controller::error() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::success() should be compatible with that of Think\Controller::success() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `fc_admin_menu` [ RunTime:0.0156s ]
+NOTIC: [2] Missing argument 1 for Admin\Classes\AdminController::_get_data(), called in D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php on line 210 and defined D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 242 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Content' AND `c` = 'Content' AND `a` = 'index' AND `data` = '' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Content' AND `c` = 'Content' AND `a` = 'index' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_content_model` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fc_content_model` WHERE `disabled` = 0  [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Admin\Classes\AdminController::admin_tpl(), called in D:\Program Files\PHPStudy\WWW\Modules\Content\Controller\ContentController.class.php on line 21 and defined D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 113 行.
+NOTIC: [8] Undefined variable: name D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 115 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_behavior` [ RunTime:0.0000s ]
+SQL: INSERT INTO `fc_admin_behavior` (`uid`,`timelong`,`memory`,`time`,`date1`,`date2`,`m`,`c`,`a`,`ip`,`data`) VALUES ('1','0.046875','474','1460043833','2016-04-07','2016-04-07 23','Content','Content','index','127.0.0.1','') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\RecordEndBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2016-04-07T23:43:53+08:00 ] 127.0.0.1 /Content/Content/public_category.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0156s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.046875s ]
+INFO: [ app_init ] --END-- [ RunTime:0.046875s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Admin\Behavior\RecordBeginBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::error() should be compatible with that of Think\Controller::error() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::success() should be compatible with that of Think\Controller::success() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `fc_admin_menu` [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Admin\Classes\AdminController::_get_data(), called in D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php on line 210 and defined D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 242 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Content' AND `c` = 'Content' AND `a` = 'public_category' AND `data` = '' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Content' AND `c` = 'Content' AND `a` = 'public_category' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_content_category` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `fc_content_category` WHERE `url` = '' ORDER BY listorder DESC  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: from D:\Program Files\PHPStudy\WWW\Modules\Content\Controller\ContentController.class.php 第 365 行.
+NOTIC: [8] Undefined variable: ajax_show D:\Program Files\PHPStudy\WWW\Modules\Content\Controller\ContentController.class.php 第 374 行.
+NOTIC: [2] Missing argument 1 for Admin\Classes\AdminController::admin_tpl(), called in D:\Program Files\PHPStudy\WWW\Modules\Content\Controller\ContentController.class.php on line 378 and defined D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 113 行.
+NOTIC: [8] Undefined variable: name D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 115 行.
+NOTIC: [2] Missing argument 1 for load_artdialog(), called in D:\Program Files\PHPStudy\WWW\Modules\Content\templates\Content\public_category.php on line 1 and defined D:\Program Files\PHPStudy\WWW\Common\load_front_plug.php 第 39 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_behavior` [ RunTime:0.0156s ]
+SQL: INSERT INTO `fc_admin_behavior` (`uid`,`timelong`,`memory`,`time`,`date1`,`date2`,`m`,`c`,`a`,`ip`,`data`) VALUES ('1','0.03125','618','1460043833','2016-04-07','2016-04-07 23','Content','Content','public_category','127.0.0.1','') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\RecordEndBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2016-04-07T23:43:57+08:00 ] 127.0.0.1 /Content/Content/lists/catid/9/modelid/10.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.062500s ]
+INFO: [ app_init ] --END-- [ RunTime:0.062500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Admin\Behavior\RecordBeginBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::error() should be compatible with that of Think\Controller::error() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::success() should be compatible with that of Think\Controller::success() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `fc_admin_menu` [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Admin\Classes\AdminController::_get_data(), called in D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php on line 210 and defined D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 242 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Content' AND `c` = 'Content' AND `a` = 'lists' AND `data` = '' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Content' AND `c` = 'Content' AND `a` = 'lists' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_content_model` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fc_content_model` WHERE `modelid` = 10 AND `disabled` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_content_product` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_content_category` [ RunTime:0.0156s ]
+NOTIC: [8] Undefined index: pow_del D:\Program Files\PHPStudy\WWW\Modules\Content\Controller\ContentController.class.php 第 54 行.
+NOTIC: [8] Undefined index: pow_del D:\Program Files\PHPStudy\WWW\Modules\Content\Controller\ContentController.class.php 第 58 行.
+NOTIC: [8] Undefined index: end_time D:\Program Files\PHPStudy\WWW\Modules\Content\Controller\ContentController.class.php 第 69 行.
+NOTIC: [8] Undefined index: begin_time D:\Program Files\PHPStudy\WWW\Modules\Content\Controller\ContentController.class.php 第 76 行.
+NOTIC: [8] Undefined index: end_time D:\Program Files\PHPStudy\WWW\Modules\Content\Controller\ContentController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `fc_content_category_priv` [ RunTime:0.0000s ]
+SQL: SELECT `view` FROM `fc_content_category_priv` WHERE `grpid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `path` FROM `fc_content_category` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fc_content_category` WHERE `path` LIKE '-0-6-9-%' ORDER BY listorder DESC  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: keyword D:\Program Files\PHPStudy\WWW\Modules\Content\Controller\ContentController.class.php 第 112 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_content_product` WHERE `status` = 99 AND `catid` IN ('9') LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fc_content_product` WHERE `status` = 99 AND `catid` IN ('9') ORDER BY ID DESC LIMIT 0,30   [ RunTime:0.0156s ]
+NOTIC: [2] Missing argument 1 for Admin\Classes\AdminController::_get_data(), called in D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php on line 139 and defined D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 242 行.
+SQL: SELECT * FROM `fc_admin_menu` WHERE `m` = 'Content' AND `c` = 'Content' AND `a` = 'lists' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fc_admin_menu` WHERE `parentid` = 469 AND `project1` = 1 ORDER BY listorder DESC,id DESC  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: begin_time D:\Program Files\PHPStudy\WWW\Modules\Content\templates\Content\list.php 第 13 行.
+SQL: SHOW COLUMNS FROM `fc_content_category` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fc_content_category` WHERE `modelids` LIKE '%,10,%' ORDER BY listorder DESC  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: str D:\Program Files\PHPStudy\WWW\Modules\Content\templates\Content\list.php 第 19 行.
+NOTIC: [8] Undefined index: keyword D:\Program Files\PHPStudy\WWW\Modules\Content\templates\Content\list.php 第 21 行.
+NOTIC: [8] Undefined index: type D:\Program Files\PHPStudy\WWW\Modules\Content\templates\Content\list.php 第 23 行.
+NOTIC: [8] Undefined index: type D:\Program Files\PHPStudy\WWW\Modules\Content\templates\Content\list.php 第 24 行.
+NOTIC: [8] Undefined index: type D:\Program Files\PHPStudy\WWW\Modules\Content\templates\Content\list.php 第 25 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_behavior` [ RunTime:0.0000s ]
+SQL: INSERT INTO `fc_admin_behavior` (`uid`,`timelong`,`memory`,`time`,`date1`,`date2`,`m`,`c`,`a`,`ip`,`data`) VALUES ('1','0.09375','678','1460043837','2016-04-07','2016-04-07 23','Content','Content','lists','127.0.0.1','catid/9/modelid/10') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\RecordEndBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2016-04-07T23:43:59+08:00 ] 127.0.0.1 /Content/Content/lists/catid/8/modelid/10.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.046875s ]
+INFO: [ app_init ] --END-- [ RunTime:0.062500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Admin\Behavior\RecordBeginBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::error() should be compatible with that of Think\Controller::error() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::success() should be compatible with that of Think\Controller::success() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `fc_admin_menu` [ RunTime:0.0156s ]
+NOTIC: [2] Missing argument 1 for Admin\Classes\AdminController::_get_data(), called in D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php on line 210 and defined D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 242 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Content' AND `c` = 'Content' AND `a` = 'lists' AND `data` = '' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Content' AND `c` = 'Content' AND `a` = 'lists' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_content_model` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fc_content_model` WHERE `modelid` = 10 AND `disabled` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_content_product` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `fc_content_category` [ RunTime:0.0156s ]
+NOTIC: [8] Undefined index: pow_del D:\Program Files\PHPStudy\WWW\Modules\Content\Controller\ContentController.class.php 第 54 行.
+NOTIC: [8] Undefined index: pow_del D:\Program Files\PHPStudy\WWW\Modules\Content\Controller\ContentController.class.php 第 58 行.
+NOTIC: [8] Undefined index: end_time D:\Program Files\PHPStudy\WWW\Modules\Content\Controller\ContentController.class.php 第 69 行.
+NOTIC: [8] Undefined index: begin_time D:\Program Files\PHPStudy\WWW\Modules\Content\Controller\ContentController.class.php 第 76 行.
+NOTIC: [8] Undefined index: end_time D:\Program Files\PHPStudy\WWW\Modules\Content\Controller\ContentController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `fc_content_category_priv` [ RunTime:0.0000s ]
+SQL: SELECT `view` FROM `fc_content_category_priv` WHERE `grpid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `path` FROM `fc_content_category` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fc_content_category` WHERE `path` LIKE '-0-6-8-%' ORDER BY listorder DESC  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: keyword D:\Program Files\PHPStudy\WWW\Modules\Content\Controller\ContentController.class.php 第 112 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_content_product` WHERE `status` = 99 AND `catid` IN ('8') LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fc_content_product` WHERE `status` = 99 AND `catid` IN ('8') ORDER BY ID DESC LIMIT 0,30   [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Admin\Classes\AdminController::_get_data(), called in D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php on line 139 and defined D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 242 行.
+SQL: SELECT * FROM `fc_admin_menu` WHERE `m` = 'Content' AND `c` = 'Content' AND `a` = 'lists' LIMIT 1   [ RunTime:0.0156s ]
+SQL: SELECT * FROM `fc_admin_menu` WHERE `parentid` = 469 AND `project1` = 1 ORDER BY listorder DESC,id DESC  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: begin_time D:\Program Files\PHPStudy\WWW\Modules\Content\templates\Content\list.php 第 13 行.
+SQL: SHOW COLUMNS FROM `fc_content_category` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fc_content_category` WHERE `modelids` LIKE '%,10,%' ORDER BY listorder DESC  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: str D:\Program Files\PHPStudy\WWW\Modules\Content\templates\Content\list.php 第 19 行.
+NOTIC: [8] Undefined index: keyword D:\Program Files\PHPStudy\WWW\Modules\Content\templates\Content\list.php 第 21 行.
+NOTIC: [8] Undefined index: type D:\Program Files\PHPStudy\WWW\Modules\Content\templates\Content\list.php 第 23 行.
+NOTIC: [8] Undefined index: type D:\Program Files\PHPStudy\WWW\Modules\Content\templates\Content\list.php 第 24 行.
+NOTIC: [8] Undefined index: type D:\Program Files\PHPStudy\WWW\Modules\Content\templates\Content\list.php 第 25 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_behavior` [ RunTime:0.0156s ]
+SQL: INSERT INTO `fc_admin_behavior` (`uid`,`timelong`,`memory`,`time`,`date1`,`date2`,`m`,`c`,`a`,`ip`,`data`) VALUES ('1','0.0625','678','1460043839','2016-04-07','2016-04-07 23','Content','Content','lists','127.0.0.1','catid/8/modelid/10') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\RecordEndBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2016-04-07T23:44:00+08:00 ] 127.0.0.1 /Content/Content/lists/catid/7/modelid/10.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0156s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.062500s ]
+INFO: [ app_init ] --END-- [ RunTime:0.078125s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Admin\Behavior\RecordBeginBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::error() should be compatible with that of Think\Controller::error() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::success() should be compatible with that of Think\Controller::success() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `fc_admin_menu` [ RunTime:0.0156s ]
+NOTIC: [2] Missing argument 1 for Admin\Classes\AdminController::_get_data(), called in D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php on line 210 and defined D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 242 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Content' AND `c` = 'Content' AND `a` = 'lists' AND `data` = '' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Content' AND `c` = 'Content' AND `a` = 'lists' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_content_model` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fc_content_model` WHERE `modelid` = 10 AND `disabled` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_content_product` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `fc_content_category` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pow_del D:\Program Files\PHPStudy\WWW\Modules\Content\Controller\ContentController.class.php 第 54 行.
+NOTIC: [8] Undefined index: pow_del D:\Program Files\PHPStudy\WWW\Modules\Content\Controller\ContentController.class.php 第 58 行.
+NOTIC: [8] Undefined index: end_time D:\Program Files\PHPStudy\WWW\Modules\Content\Controller\ContentController.class.php 第 69 行.
+NOTIC: [8] Undefined index: begin_time D:\Program Files\PHPStudy\WWW\Modules\Content\Controller\ContentController.class.php 第 76 行.
+NOTIC: [8] Undefined index: end_time D:\Program Files\PHPStudy\WWW\Modules\Content\Controller\ContentController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `fc_content_category_priv` [ RunTime:0.0156s ]
+SQL: SELECT `view` FROM `fc_content_category_priv` WHERE `grpid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `path` FROM `fc_content_category` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fc_content_category` WHERE `path` LIKE '-0-6-7-%' ORDER BY listorder DESC  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: keyword D:\Program Files\PHPStudy\WWW\Modules\Content\Controller\ContentController.class.php 第 112 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_content_product` WHERE `status` = 99 AND `catid` IN ('7') LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fc_content_product` WHERE `status` = 99 AND `catid` IN ('7') ORDER BY ID DESC LIMIT 0,30   [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Admin\Classes\AdminController::_get_data(), called in D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php on line 139 and defined D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 242 行.
+SQL: SELECT * FROM `fc_admin_menu` WHERE `m` = 'Content' AND `c` = 'Content' AND `a` = 'lists' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fc_admin_menu` WHERE `parentid` = 469 AND `project1` = 1 ORDER BY listorder DESC,id DESC  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: begin_time D:\Program Files\PHPStudy\WWW\Modules\Content\templates\Content\list.php 第 13 行.
+SQL: SHOW COLUMNS FROM `fc_content_category` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `fc_content_category` WHERE `modelids` LIKE '%,10,%' ORDER BY listorder DESC  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: str D:\Program Files\PHPStudy\WWW\Modules\Content\templates\Content\list.php 第 19 行.
+NOTIC: [8] Undefined index: keyword D:\Program Files\PHPStudy\WWW\Modules\Content\templates\Content\list.php 第 21 行.
+NOTIC: [8] Undefined index: type D:\Program Files\PHPStudy\WWW\Modules\Content\templates\Content\list.php 第 23 行.
+NOTIC: [8] Undefined index: type D:\Program Files\PHPStudy\WWW\Modules\Content\templates\Content\list.php 第 24 行.
+NOTIC: [8] Undefined index: type D:\Program Files\PHPStudy\WWW\Modules\Content\templates\Content\list.php 第 25 行.
+SQL: SELECT * FROM `fc_content_category` ORDER BY listorder DESC  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: disdel D:\Program Files\PHPStudy\WWW\Modules\Content\templates\Content\list.php 第 72 行.
+SQL: SELECT * FROM `fc_content_category` ORDER BY listorder DESC  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: disdel D:\Program Files\PHPStudy\WWW\Modules\Content\templates\Content\list.php 第 72 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_behavior` [ RunTime:0.0156s ]
+SQL: INSERT INTO `fc_admin_behavior` (`uid`,`timelong`,`memory`,`time`,`date1`,`date2`,`m`,`c`,`a`,`ip`,`data`) VALUES ('1','0.0625','684','1460043840','2016-04-07','2016-04-07 23','Content','Content','lists','127.0.0.1','catid/7/modelid/10') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\RecordEndBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2016-04-07T23:44:11+08:00 ] 127.0.0.1 /Content/Category/lists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.031250s ]
+INFO: [ app_init ] --END-- [ RunTime:0.031250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Admin\Behavior\RecordBeginBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::error() should be compatible with that of Think\Controller::error() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::success() should be compatible with that of Think\Controller::success() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `fc_admin_menu` [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Admin\Classes\AdminController::_get_data(), called in D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php on line 210 and defined D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 242 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Content' AND `c` = 'Category' AND `a` = 'lists' AND `data` = '' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_content_category` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_content_category` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fc_content_category` ORDER BY listorder DESC,id DESC  [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Admin\Classes\AdminController::_get_data(), called in D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php on line 139 and defined D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 242 行.
+SQL: SELECT * FROM `fc_admin_menu` WHERE `m` = 'Content' AND `c` = 'Category' AND `a` = 'lists' AND `data` = '' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fc_admin_menu` WHERE `parentid` = 74 AND `project1` = 1 ORDER BY listorder DESC,id DESC  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_behavior` [ RunTime:0.0156s ]
+SQL: INSERT INTO `fc_admin_behavior` (`uid`,`timelong`,`memory`,`time`,`date1`,`date2`,`m`,`c`,`a`,`ip`,`data`) VALUES ('1','0.09375','565','1460043851','2016-04-07','2016-04-07 23','Content','Category','lists','127.0.0.1','') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\RecordEndBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2016-04-07T23:44:12+08:00 ] 127.0.0.1 /Content/Sitemodel/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0156s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.046875s ]
+INFO: [ app_init ] --END-- [ RunTime:0.046875s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Admin\Behavior\RecordBeginBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::error() should be compatible with that of Think\Controller::error() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::success() should be compatible with that of Think\Controller::success() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `fc_admin_menu` [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Admin\Classes\AdminController::_get_data(), called in D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php on line 210 and defined D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 242 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Content' AND `c` = 'Sitemodel' AND `a` = 'index' AND `data` = '' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_content_model` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `fc_content_model`  [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Admin\Classes\AdminController::_get_data(), called in D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php on line 139 and defined D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 242 行.
+SQL: SELECT * FROM `fc_admin_menu` WHERE `m` = 'Content' AND `c` = 'Sitemodel' AND `a` = 'index' AND `data` = '' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fc_admin_menu` WHERE `parentid` = 462 AND `project1` = 1 ORDER BY listorder DESC,id DESC  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: pages D:\Program Files\PHPStudy\WWW\Modules\Content\templates\Sitemodel\index.php 第 31 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_behavior` [ RunTime:0.0156s ]
+SQL: INSERT INTO `fc_admin_behavior` (`uid`,`timelong`,`memory`,`time`,`date1`,`date2`,`m`,`c`,`a`,`ip`,`data`) VALUES ('1','0.09375','435','1460043852','2016-04-07','2016-04-07 23','Content','Sitemodel','index','127.0.0.1','') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\RecordEndBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2016-04-07T23:44:13+08:00 ] 127.0.0.1 /Content/Position/lists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.046875s ]
+INFO: [ app_init ] --END-- [ RunTime:0.046875s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Admin\Behavior\RecordBeginBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::error() should be compatible with that of Think\Controller::error() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::success() should be compatible with that of Think\Controller::success() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `fc_admin_menu` [ RunTime:0.0156s ]
+NOTIC: [2] Missing argument 1 for Admin\Classes\AdminController::_get_data(), called in D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php on line 210 and defined D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 242 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Content' AND `c` = 'Position' AND `a` = 'lists' AND `data` = '' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_content_position` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_content_position` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fc_content_position` ORDER BY listorder DESC LIMIT 0,20   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_content_model` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fc_content_model` WHERE `disabled` = 0  [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Admin\Classes\AdminController::_get_data(), called in D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php on line 139 and defined D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 242 行.
+SQL: SELECT * FROM `fc_admin_menu` WHERE `m` = 'Content' AND `c` = 'Position' AND `a` = 'lists' AND `data` = '' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fc_admin_menu` WHERE `parentid` = 99 AND `project1` = 1 ORDER BY listorder DESC,id DESC  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: modelid D:\Program Files\PHPStudy\WWW\Modules\Content\templates\Position\lists.php 第 13 行.
+NOTIC: [8] Undefined index: modelid D:\Program Files\PHPStudy\WWW\Modules\Content\templates\Position\lists.php 第 13 行.
+NOTIC: [8] Undefined index: modelid D:\Program Files\PHPStudy\WWW\Modules\Content\templates\Position\lists.php 第 13 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_behavior` [ RunTime:0.0000s ]
+SQL: INSERT INTO `fc_admin_behavior` (`uid`,`timelong`,`memory`,`time`,`date1`,`date2`,`m`,`c`,`a`,`ip`,`data`) VALUES ('1','0.078125','469','1460043853','2016-04-07','2016-04-07 23','Content','Position','lists','127.0.0.1','') [ RunTime:0.0156s ]
+INFO: Run Admin\Behavior\RecordEndBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2016-04-07T23:44:18+08:00 ] 127.0.0.1 /Content/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.062500s ]
+INFO: [ app_init ] --END-- [ RunTime:0.062500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Admin\Behavior\RecordBeginBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::error() should be compatible with that of Think\Controller::error() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::success() should be compatible with that of Think\Controller::success() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `fc_admin_menu` [ RunTime:0.0156s ]
+NOTIC: [2] Missing argument 1 for Admin\Classes\AdminController::_get_data(), called in D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php on line 210 and defined D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 242 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Content' AND `c` = 'Index' AND `a` = 'index' AND `data` = '' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Content' AND `c` = 'Index' AND `a` = 'index' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-04-07T23:44:25+08:00 ] 127.0.0.1 /Content/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0313s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.046875s ]
+INFO: [ app_init ] --END-- [ RunTime:0.062500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Admin\Behavior\RecordBeginBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::error() should be compatible with that of Think\Controller::error() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::success() should be compatible with that of Think\Controller::success() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `fc_admin_menu` [ RunTime:0.0156s ]
+NOTIC: [2] Missing argument 1 for Admin\Classes\AdminController::_get_data(), called in D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php on line 210 and defined D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 242 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Content' AND `c` = 'Index' AND `a` = 'index' AND `data` = '' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Content' AND `c` = 'Index' AND `a` = 'index' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-04-07T23:46:14+08:00 ] 127.0.0.1 /Content/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0469s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.093750s ]
+INFO: [ app_init ] --END-- [ RunTime:0.093750s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: Run Admin\Behavior\RecordBeginBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::error() should be compatible with that of Think\Controller::error() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::success() should be compatible with that of Think\Controller::success() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `fc_admin_menu` [ RunTime:0.0469s ]
+NOTIC: [2] Missing argument 1 for Admin\Classes\AdminController::_get_data(), called in D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php on line 210 and defined D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 242 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Content' AND `c` = 'Index' AND `a` = 'index' AND `data` = '' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Content' AND `c` = 'Index' AND `a` = 'index' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-04-07T23:46:22+08:00 ] 127.0.0.1 /Content/Category/lists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0156s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.046875s ]
+INFO: [ app_init ] --END-- [ RunTime:0.046875s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Admin\Behavior\RecordBeginBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::error() should be compatible with that of Think\Controller::error() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::success() should be compatible with that of Think\Controller::success() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `fc_admin_menu` [ RunTime:0.0156s ]
+NOTIC: [2] Missing argument 1 for Admin\Classes\AdminController::_get_data(), called in D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php on line 210 and defined D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 242 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Content' AND `c` = 'Category' AND `a` = 'lists' AND `data` = '' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_content_category` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_content_category` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fc_content_category` ORDER BY listorder DESC,id DESC  [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Admin\Classes\AdminController::_get_data(), called in D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php on line 139 and defined D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 242 行.
+SQL: SELECT * FROM `fc_admin_menu` WHERE `m` = 'Content' AND `c` = 'Category' AND `a` = 'lists' AND `data` = '' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fc_admin_menu` WHERE `parentid` = 74 AND `project1` = 1 ORDER BY listorder DESC,id DESC  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_behavior` [ RunTime:0.0156s ]
+SQL: INSERT INTO `fc_admin_behavior` (`uid`,`timelong`,`memory`,`time`,`date1`,`date2`,`m`,`c`,`a`,`ip`,`data`) VALUES ('1','0.03125','565','1460043982','2016-04-07','2016-04-07 23','Content','Category','lists','127.0.0.1','') [ RunTime:0.0156s ]
+INFO: Run Admin\Behavior\RecordEndBehavior [ RunTime:0.031250s ]
+INFO: [ app_end ] --END-- [ RunTime:0.031250s ]
+
+[ 2016-04-07T23:46:25+08:00 ] 127.0.0.1 /Content/Sitemodel/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.046875s ]
+INFO: [ app_init ] --END-- [ RunTime:0.046875s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Admin\Behavior\RecordBeginBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::error() should be compatible with that of Think\Controller::error() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::success() should be compatible with that of Think\Controller::success() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `fc_admin_menu` [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Admin\Classes\AdminController::_get_data(), called in D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php on line 210 and defined D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 242 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Content' AND `c` = 'Sitemodel' AND `a` = 'index' AND `data` = '' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_content_model` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `fc_content_model`  [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Admin\Classes\AdminController::_get_data(), called in D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php on line 139 and defined D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 242 行.
+SQL: SELECT * FROM `fc_admin_menu` WHERE `m` = 'Content' AND `c` = 'Sitemodel' AND `a` = 'index' AND `data` = '' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fc_admin_menu` WHERE `parentid` = 462 AND `project1` = 1 ORDER BY listorder DESC,id DESC  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: pages D:\Program Files\PHPStudy\WWW\Modules\Content\templates\Sitemodel\index.php 第 31 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_behavior` [ RunTime:0.0156s ]
+SQL: INSERT INTO `fc_admin_behavior` (`uid`,`timelong`,`memory`,`time`,`date1`,`date2`,`m`,`c`,`a`,`ip`,`data`) VALUES ('1','0.046875','435','1460043985','2016-04-07','2016-04-07 23','Content','Sitemodel','index','127.0.0.1','') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\RecordEndBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2016-04-07T23:47:16+08:00 ] 127.0.0.1 /Content/Position/lists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.046875s ]
+INFO: [ app_init ] --END-- [ RunTime:0.046875s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Admin\Behavior\RecordBeginBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::error() should be compatible with that of Think\Controller::error() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::success() should be compatible with that of Think\Controller::success() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `fc_admin_menu` [ RunTime:0.0156s ]
+NOTIC: [2] Missing argument 1 for Admin\Classes\AdminController::_get_data(), called in D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php on line 210 and defined D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 242 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Content' AND `c` = 'Position' AND `a` = 'lists' AND `data` = '' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_content_position` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_content_position` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fc_content_position` ORDER BY listorder DESC LIMIT 0,20   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_content_model` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fc_content_model` WHERE `disabled` = 0  [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Admin\Classes\AdminController::_get_data(), called in D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php on line 139 and defined D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 242 行.
+SQL: SELECT * FROM `fc_admin_menu` WHERE `m` = 'Content' AND `c` = 'Position' AND `a` = 'lists' AND `data` = '' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fc_admin_menu` WHERE `parentid` = 99 AND `project1` = 1 ORDER BY listorder DESC,id DESC  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: modelid D:\Program Files\PHPStudy\WWW\Modules\Content\templates\Position\lists.php 第 13 行.
+NOTIC: [8] Undefined index: modelid D:\Program Files\PHPStudy\WWW\Modules\Content\templates\Position\lists.php 第 13 行.
+NOTIC: [8] Undefined index: modelid D:\Program Files\PHPStudy\WWW\Modules\Content\templates\Position\lists.php 第 13 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_behavior` [ RunTime:0.0000s ]
+SQL: INSERT INTO `fc_admin_behavior` (`uid`,`timelong`,`memory`,`time`,`date1`,`date2`,`m`,`c`,`a`,`ip`,`data`) VALUES ('1','0.0625','469','1460044036','2016-04-07','2016-04-07 23','Content','Position','lists','127.0.0.1','') [ RunTime:0.0156s ]
+INFO: Run Admin\Behavior\RecordEndBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+

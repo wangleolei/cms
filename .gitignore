@@ -1,0 +1,8 @@
+ThinkPHP/*
+jnnewmig/*
+Runtime/*
+Public/newmig/*
+Base/Common/Conf/*
+Base/Runtime/*
+upload/*
+*.sql

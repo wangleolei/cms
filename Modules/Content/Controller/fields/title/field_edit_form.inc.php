@@ -1,0 +1,1 @@
+<?php defined('THINK_PATH') or exit('No permission resources.');?>

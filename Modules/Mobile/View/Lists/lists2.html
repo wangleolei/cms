@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)" name="viewport">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection">
+    <title>{$seo_title?$seo_title:$name} - ThinkerCMS</title>
+    <meta name="keywords" content="{$seo_keywords}" />
+    <meta name="description" content="{$seo_description}" />
+
+    
+    <link rel="stylesheet" type="text/css" href="/Public/modules/mobile/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="/Public/modules/mobile/css/common-mobile.css">
+    <link rel="stylesheet" type="text/css" href="/Public/modules/mobile/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/Public/modules/mobile/css/submit.css">
+    <script type="text/javascript" src='/Public/modules/mobile/js/jquery-1.8.3.min.js'></script>
+    <script type="text/javascript" src='/Public/modules/mobile/js/swiper.min.js'></script>
+    <script type="text/javascript" src='/Public/modules/mobile/js/public.js'></script>
+    <script type="text/javascript" src='/Public/modules/mobile/js/city-mobile.js'></script>
+    <script type="text/javascript" src='/Public/modules/mobile/js/common.js'></script>
+    <script>
+        //微信tel失效问题,去除sukey
+        if(navigator.userAgent.indexOf('MicroMessenger')!=-1){
+            var shref=window.location.href;
+            if(shref.indexOf('wxref=mp.weixin.qq.com')==-1)window.location.href+=shref.indexOf('?')==-1?'?wxref=mp.weixin.qq.com':'&wxref=mp.weixin.qq.com';
+        }
+        //ios7 不用webapp
+        (function(){
+            if(/(iPhone|iPad)\sOS\s7_/.test(window.navigator.userAgent)){
+                var t=document.head.querySelector('meta[name="apple-mobile-web-app-capable"]');
+                if(t)t.remove();
+            }
+        })()
+
+        function getCookieObj(){
+            var ary=document.cookie.split(/;\s?/),cookieObj={};
+            for(var i=0,n=ary.length;i<n;i++){
+                var t=ary[i].split('=');
+                if(t.length==2)cookieObj[t[0]]=t[1];
+            }
+            return cookieObj;
+        }
+        (function(){
+            var defaultImgMode=window.localStorage.getItem('browseMode');
+            if(defaultImgMode&&defaultImgMode!='close'){
+                var imgMode=getCookieObj().imgDispMode;
+                if(imgMode=='pq'){
+                    document.write('<link id="hdLink" rel="stylesheet" type="text/css" href="/Public/modules/mobile/css/common_hd480.css">');
+                }else if(imgMode=='gq'){
+                    document.write('<link id="hdLink" rel="stylesheet" type="text/css" href="/Public/modules/mobile/css/common_hd640.css">');
+                }else if(!imgMode){
+                    if(defaultImgMode=='gq'){
+                        var dpr=window.devicePixelRatio;
+                        if(dpr>1.5){
+                            document.write('<link id="hdLink" rel="stylesheet" type="text/css" href="/Public/modules/mobile/css/common_hd640.css">');
+                        }else{
+                            document.write('<link id="hdLink" rel="stylesheet" type="text/css" href="/Public/modules/mobile/css/common_hd480.css">');
+                        }
+                    }
+                }
+            }
+        })()
+
+        var CompInit=function(){
+            var initFuncs={};
+            var requireJsAry=[];
+            return {
+                addCompInit:function(key,opts){
+                    if(opts.initFunc){
+                        initFuncs[key]=opts.initFunc;
+                    }
+                    if(opts.requireJs){
+                        requireJsAry.push(opts.requireJs);
+                    }
+                },
+                initAll:function(fn){
+                    fn({requireJsAry:requireJsAry,initFuncs:initFuncs})
+                }
+            }
+        }()
+
+    </script>
+    <script type="text/javascript">
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+            };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
+</head>
+<body>
+    
+
+    
+    <!-- wrapper -->
+    <!-- header -->
+    
+    <header>
+	<div class="logo"><a href="/"><img src="/Public/modules/mobile/images/logo.png" alt=""></a></div>
+	<div class="category"><a href="javascript:;"></a></div>
+</header>
+    
+    <!-- header end -->
+    
+    <section class='content case-category'>
+        <div class="case-block">
+            <div class='category-name clearfix'>
+                <div class='c-name-item'>
+                    <a href="javascript:;">
+                        <select name="" id="indu" class="case_type">
+                            <option value="">行业分类</option>
+                            <option value="">全部</option>
+                                    <option value="26" >工业品/制造业/包装</option><option value="27" >服装/鞋靴/箱包/配饰
+</option><option value="28" >原材料/纺织</option><option value="29" >家具建材/百货</option><option value="30" >母婴/玩具/美妆
+</option><option value="31" >数码家电/运动户外</option><option value="32" >商业服务</option><option value="52" >房地产业</option><option value="53" >医疗保健</option><option value="54" >餐饮/食品</option><option value="55" >文化传播/工艺美术
+</option><option value="56" >五金机电
+</option><option value="57" >公共事业/教育
+</option><option value="33" >其他</option>                        </select>
+                    </a>
+                </div>
+                <div class='c-name-item'>
+                    <a href="javascript:;">
+                        <select name="" id="view" class="case_type">
+                            <option value="">视觉分类</option>
+                            <option value="">全部</option>
+                                    <option value="19" >蓝色系</option><option value="20" >红色系</option><option value="21" >绿色系</option><option value="22" >黄色系</option><option value="23" >深色系</option><option value="24" >浅色系</option><option value="25" >其他色系</option>                        </select>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="case-list case-enjoy">
+            <ul class='clearfix' id="case-list">
+                                    <li>
+                        <a href="/case/104145">
+                            <div class="img"><img src="/attach/case/20151217/5672234bb77a9.png" alt=""></div>
+                            <p class='case-name'>沈阳故宫博物院</p>
+                            <p class='case-trade'>行业：公共事业/教育
+</p>
+                        </a>
+                    </li>                    <li>
+                        <a href="/case/104148">
+                            <div class="img"><img src="/attach/case/20151217/56721858869b3.png" alt=""></div>
+                            <p class='case-name'>上海金丝猴集团无锡可可制品有限公司</p>
+                            <p class='case-trade'>行业：餐饮/食品</p>
+                        </a>
+                    </li>                    <li>
+                        <a href="/case/104147">
+                            <div class="img"><img src="/attach/case/20151217/567223d474796.png" alt=""></div>
+                            <p class='case-name'>北京东来顺集团有限责任公司</p>
+                            <p class='case-trade'>行业：餐饮/食品</p>
+                        </a>
+                    </li>                    <li>
+                        <a href="/case/87511">
+                            <div class="img"><img src="http://images.300.cn/www/201211/201211061333211000100100000087509.jpg" alt=""></div>
+                            <p class='case-name'>全聚德青岛店</p>
+                            <p class='case-trade'>行业：其他</p>
+                        </a>
+                    </li>                    <li>
+                        <a href="/case/308">
+                            <div class="img"><img src="/attach/case/buy2buyupfile/20157141133634052s.jpg" alt=""></div>
+                            <p class='case-name'>中央民族歌舞团 </p>
+                            <p class='case-trade'>行业：公共事业/教育
+</p>
+                        </a>
+                    </li>                    <li>
+                        <a href="/case/310">
+                            <div class="img"><img src="/attach/case/buy2buyupfile/20157115291011224s.jpg" alt=""></div>
+                            <p class='case-name'>国安剧院</p>
+                            <p class='case-trade'>行业：公共事业/教育
+</p>
+                        </a>
+                    </li>                    <li>
+                        <a href="/case/321">
+                            <div class="img"><img src="/attach/case/buy2buyupfile/20157210362824151s.jpg" alt=""></div>
+                            <p class='case-name'>重庆京剧团</p>
+                            <p class='case-trade'>行业：文化传播/工艺美术
+</p>
+                        </a>
+                    </li>                    <li>
+                        <a href="/case/852">
+                            <div class="img"><img src="/attach/case/mxm/datu/40.jpg" alt=""></div>
+                            <p class='case-name'>中通汽车工业集团有限责任公司</p>
+                            <p class='case-trade'>行业：工业品/制造业/包装</p>
+                        </a>
+                    </li>            </ul>
+        </div>
+    </section>
+<include file="Public/footer" />
+</body>

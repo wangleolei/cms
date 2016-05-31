@@ -1,0 +1,63 @@
+<div id="wk_ft">
+  <div class="wk_foot">
+    <div class="wk_foot_c">
+      <div class="wk_foot_topx">
+        <div class="wk_fot_01"><span>网站导航</span></div>
+        <div class="wk_fot_02"><span>企业简介</span></div>
+        <div class="wk_fot_03"><span>联系我们</span></div>
+        <div class="wk_fot_04"><span>站内搜索</span></div>
+      </div>
+      <div class="wk_foot_nav">
+        <ul>
+          <volist name="navs" id="vo">
+          <li><a href="{$vo.url}">{$vo.name}</a></li>
+          </volist>
+        </ul>
+      </div>
+      <div class="wk_liuyan">
+        <div class="wk_ft_logo"><img src="/Public/modules/home/images/ft_logo.png" height="50" alt="ThinkerCMS_技术服务演示站点" border="0" /></div>
+        <div class="wk_ft_qyjs">ThinkerCMS是ThinkerPHP旗下的一款专门针对小型网站的内容管理系统，其特点在于小巧精致，可快速进行二次开发。</div>
+      </div>
+      <div class="wk_foot_content">
+        <div class="wk_foot_add">地址：{$siteinfo.address}</div>
+        <div class="wk_foot_phone">电话：{$siteinfo.phone}</div>
+        <div class="wk_foot_fax">传真：{$siteinfo.fax}</div>
+        <div class="wk_foot_zip">邮箱：{$siteinfo.email}</div>
+      </div>
+      <div class="wk_foot_search">
+        <div id="scbar" class="cl">
+          <form id="scbar_form" method="post" autocomplete="off" onsubmit="searchFocus($('scbar_txt'))" action="search.php?searchsubmit=yes" target="_blank">
+            <input type="hidden" name="mod" id="scbar_mod" value="search" />
+            <input type="hidden" name="formhash" value="4557416e" />
+            <input type="hidden" name="srchtype" value="title" />
+            <input type="hidden" name="srhfid" value="0" />
+            <input type="hidden" name="srhlocality" value="portal::index" />
+            <table cellspacing="0" cellpadding="0">
+              <tr>
+                <td class="scbar_txt_td"><input type="text" name="srchtxt" id="scbar_txt" value="请输入搜索内容" autocomplete="off" x-webkit-speech speech /></td>
+                <td class="scbar_type_td"><a href="javascript:;" id="scbar_type" class="xg1" onclick="showMenu(this.id)" hidefocus="true">搜索</a></td>
+                <td class="scbar_btn_td"><button type="submit" name="searchsubmit" id="scbar_btn" sc="1" class="pn pnc" value="true"><strong class="xi2">搜索</strong></button></td>
+              </tr>
+            </table>
+          </form>
+        </div>
+      </div>
+      <div class="wk_foot_key">
+        <ul class="wk_foot_kbox">
+          <li><a href=""></a></li>
+        </ul>
+        <div class="clear"></div>
+      </div>
+      <div class="wk_foot_fx">
+        <div class="bdsharebuttonbox"> <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a> <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a> <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a> <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a> </div>
+        <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+      </div>
+      <div class="clear"></div>
+      <div class="wk_foot_bkp">
+        <div class="wk_copy_name">Copyright &copy; 2016 <a href="http://www.thinkerphp.com" target="_blank">ThinkerPHP.</a> Powered by <a href="http://cms.thinkerphp.com" title="thinkercms!" target="_blank">ThinkerCMS!</a> <em>{:C('version')}</em> 
+          <a href="http://www.miitbeian.gov.cn/" target="_blank">( {$siteinfo.icp} )</a>&nbsp;&nbsp;<span id="tcss"></span></div>
+      </div>
+    </div>
+  </div>
+  <div id="ft" class="wp cl" style="border:0;"> </div>
+</div>

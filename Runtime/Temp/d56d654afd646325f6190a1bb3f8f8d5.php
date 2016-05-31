@@ -1,0 +1,3 @@
+<?php
+//000000000000a:23:{s:11:"system_name";s:10:"ThinkerCMS";s:11:"system_logo";s:33:"/Public/images/admin_img/logo.png";s:7:"js_path";s:11:"/Public/js/";s:8:"css_path";s:12:"/Public/css/";s:8:"img_path";s:15:"/Public/images/";s:9:"site_host";s:0:"";s:9:"cachetime";s:4:"3600";s:9:"admin_log";s:1:"1";s:10:"LOG_RECORD";s:1:"1";s:13:"errorlog_size";s:2:"20";s:19:"maxloginfailedtimes";s:1:"8";s:14:"minrefreshtime";s:1:"2";s:9:"admin_url";s:0:"";s:11:"mail_server";s:18:"smtp.exmail.qq.com";s:9:"mail_port";s:3:"465";s:9:"mail_from";s:0:"";s:9:"mail_auth";s:1:"1";s:9:"mail_user";s:0:"";s:13:"mail_password";s:0:"";s:16:"FILE_UPLOAD_TYPE";s:5:"Local";s:11:"upload_host";s:0:"";s:20:"UPLOAD_FILE_MAX_SIZE";s:5:"20240";s:10:"THUMB_SPEC";s:0:"";}
+?>

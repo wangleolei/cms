@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)" name="viewport">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection">
+    <title>{$seo_title?$seo_title:$name} - ThinkerCMS</title>
+    <meta name="keywords" content="{$seo_keywords}" />
+    <meta name="description" content="{$seo_description}" />
+    <meta name="MSSmartTagsPreventParsing" content="True" />
+    <link rel="stylesheet" type="text/css" href="/Public/modules/mobile/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="/Public/modules/mobile/css/common-mobile.css">
+    <link rel="stylesheet" type="text/css" href="/Public/modules/mobile/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/Public/modules/mobile/css/submit.css">
+    <script type="text/javascript" src='/Public/modules/mobile/js/jquery-1.8.3.min.js'></script>
+    <script type="text/javascript" src='/Public/modules/mobile/js/swiper.min.js'></script>
+    <script type="text/javascript" src='/Public/modules/mobile/js/public.js'></script>
+    <script type="text/javascript" src='/Public/modules/mobile/js/city-mobile.js'></script>
+    <script type="text/javascript" src='/Public/modules/mobile/js/common.js'></script>
+    <script>
+        //微信tel失效问题,去除sukey
+        if(navigator.userAgent.indexOf('MicroMessenger')!=-1){
+            var shref=window.location.href;
+            if(shref.indexOf('wxref=mp.weixin.qq.com')==-1)window.location.href+=shref.indexOf('?')==-1?'?wxref=mp.weixin.qq.com':'&wxref=mp.weixin.qq.com';
+        }
+        //ios7 不用webapp
+        (function(){
+            if(/(iPhone|iPad)\sOS\s7_/.test(window.navigator.userAgent)){
+                var t=document.head.querySelector('meta[name="apple-mobile-web-app-capable"]');
+                if(t)t.remove();
+            }
+        })()
+
+        function getCookieObj(){
+            var ary=document.cookie.split(/;\s?/),cookieObj={};
+            for(var i=0,n=ary.length;i<n;i++){
+                var t=ary[i].split('=');
+                if(t.length==2)cookieObj[t[0]]=t[1];
+            }
+            return cookieObj;
+        }
+        (function(){
+            var defaultImgMode=window.localStorage.getItem('browseMode');
+            if(defaultImgMode&&defaultImgMode!='close'){
+                var imgMode=getCookieObj().imgDispMode;
+                if(imgMode=='pq'){
+                    document.write('<link id="hdLink" rel="stylesheet" type="text/css" href="/Public/modules/mobile/css/common_hd480.css">');
+                }else if(imgMode=='gq'){
+                    document.write('<link id="hdLink" rel="stylesheet" type="text/css" href="/Public/modules/mobile/css/common_hd640.css">');
+                }else if(!imgMode){
+                    if(defaultImgMode=='gq'){
+                        var dpr=window.devicePixelRatio;
+                        if(dpr>1.5){
+                            document.write('<link id="hdLink" rel="stylesheet" type="text/css" href="/Public/modules/mobile/css/common_hd640.css">');
+                        }else{
+                            document.write('<link id="hdLink" rel="stylesheet" type="text/css" href="/Public/modules/mobile/css/common_hd480.css">');
+                        }
+                    }
+                }
+            }
+        })()
+
+        var CompInit=function(){
+            var initFuncs={};
+            var requireJsAry=[];
+            return {
+                addCompInit:function(key,opts){
+                    if(opts.initFunc){
+                        initFuncs[key]=opts.initFunc;
+                    }
+                    if(opts.requireJs){
+                        requireJsAry.push(opts.requireJs);
+                    }
+                },
+                initAll:function(fn){
+                    fn({requireJsAry:requireJsAry,initFuncs:initFuncs})
+                }
+            }
+        }()
+
+    </script>
+    <script type="text/javascript">
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+            };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
+    </head>
+    <body>
+
+<!-- wrapper --> 
+<!-- header -->
+
+<header>
+      <div class="logo"><a href="/"><img src="/Public/modules/mobile/images/logo.png" alt=""></a></div>
+      <div class="category"><a href="javascript:;"></a></div>
+    </header>
+
+<!-- header end -->
+
+<section class='content'>
+      <div class="banner"><img src="/Public/modules/mobile/images/mobile-banner1.jpg" alt=""></div>
+      <div class="zqdl-content mt0">
+    <div class="bd">
+          <ul class="zixun-list1">
+        <PHP>$val=$d_content->getContentList(array('modelid'=>$modelid,'catid'=>$catid,'num'=>8,'ispage'=>1));</PHP>
+        <volist name="val.list" id="vo">
+              <li> <a href="{:UN('detail',array('catid'=>$vo['catid'],'id'=>$vo['id']))}">
+                <dl>
+                <dt>
+                    <h4>{$vo.title}</h4>
+                  </dt>
+                <dd>
+                    <p>{$vo.description}</p>
+                    <div class="list-b clearfix">
+                    <div class="come-from">来源：ThinkerCMS</div>
+                    <div class="zx-time">{:date('Y-m-d H:i',$vo['inputtime'])}</div>
+                  </div>
+                  </dd>
+              </dl>
+                </a> </li>
+            </volist>
+      </ul>
+        </div>
+  </div>
+    </section>
+<include file="Public/footer" />
+</body>

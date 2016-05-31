@@ -1,0 +1,804 @@
+[ 2016-04-08T10:13:29+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.031250s ]
+SQL: SELECT * FROM `fc_admin_setting` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_cache` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_cache` WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\Program Files\PHPStudy\WWW\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `fc_admin_cache` SET `name`='bfa226da317a2ec6552f24bcfdd197dd',`title`='缓存',`namespace`='Admin\\Model\\SettingModel',`function`='getSetting',`args`='a:1:{i:0;i:3;}',`creattime`='1460081609',`long`='0',`clear`='0' WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' [ RunTime:0.0000s ]
+INFO: Run Content\Behavior\RouteBehavior [ RunTime:0.015625s ]
+INFO: [ app_init ] --END-- [ RunTime:0.062500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Admin\Behavior\RecordBeginBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::error() should be compatible with that of Think\Controller::error() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::success() should be compatible with that of Think\Controller::success() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+
+[ 2016-04-08T10:13:29+08:00 ] 127.0.0.1 /Admin/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0156s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.031250s ]
+SQL: SELECT * FROM `fc_admin_setting` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_cache` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_cache` WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\Program Files\PHPStudy\WWW\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `fc_admin_cache` SET `name`='bfa226da317a2ec6552f24bcfdd197dd',`title`='缓存',`namespace`='Admin\\Model\\SettingModel',`function`='getSetting',`args`='a:1:{i:0;i:3;}',`creattime`='1460081609',`long`='0',`clear`='0' WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' [ RunTime:0.0000s ]
+INFO: Run Content\Behavior\RouteBehavior [ RunTime:0.015625s ]
+INFO: [ app_init ] --END-- [ RunTime:0.046875s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Admin\Behavior\RecordBeginBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::error() should be compatible with that of Think\Controller::error() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::success() should be compatible with that of Think\Controller::success() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+NOTIC: [2] Missing argument 1 for Admin\Classes\AdminController::_get_data(), called in D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php on line 66 and defined D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 242 行.
+SQL: SHOW COLUMNS FROM `fc_admin_menu` [ RunTime:0.0469s ]
+NOTIC: [2] Missing argument 1 for Admin\Classes\AdminController::_get_data(), called in D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php on line 210 and defined D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 242 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Admin' AND `c` = 'Index' AND `a` = 'login' AND `data` = '' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Admin' AND `c` = 'Index' AND `a` = 'login' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: Run Admin\Behavior\RecordEndBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2016-04-08T10:13:30+08:00 ] 127.0.0.1 /Admin/Api/verify/t/1460081609.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0156s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.046875s ]
+SQL: SELECT * FROM `fc_admin_setting` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_cache` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_cache` WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\Program Files\PHPStudy\WWW\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `fc_admin_cache` SET `name`='bfa226da317a2ec6552f24bcfdd197dd',`title`='缓存',`namespace`='Admin\\Model\\SettingModel',`function`='getSetting',`args`='a:1:{i:0;i:3;}',`creattime`='1460081609',`long`='0',`clear`='0' WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' [ RunTime:0.0000s ]
+INFO: Run Content\Behavior\RouteBehavior [ RunTime:0.015625s ]
+INFO: [ app_init ] --END-- [ RunTime:0.062500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Admin\Behavior\RecordBeginBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: Run Admin\Behavior\RecordEndBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2016-04-08T10:13:41+08:00 ] 127.0.0.1 /Admin/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.031250s ]
+SQL: SELECT * FROM `fc_admin_setting` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_cache` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_cache` WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\Program Files\PHPStudy\WWW\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `fc_admin_cache` SET `name`='bfa226da317a2ec6552f24bcfdd197dd',`title`='缓存',`namespace`='Admin\\Model\\SettingModel',`function`='getSetting',`args`='a:1:{i:0;i:3;}',`creattime`='1460081621',`long`='0',`clear`='0' WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' [ RunTime:0.0000s ]
+INFO: Run Content\Behavior\RouteBehavior [ RunTime:0.015625s ]
+INFO: [ app_init ] --END-- [ RunTime:0.046875s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Admin\Behavior\RecordBeginBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::error() should be compatible with that of Think\Controller::error() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::success() should be compatible with that of Think\Controller::success() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+NOTIC: [2] Missing argument 1 for Admin\Classes\AdminController::_get_data(), called in D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php on line 66 and defined D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 242 行.
+SQL: SHOW COLUMNS FROM `fc_admin_menu` [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Admin\Classes\AdminController::_get_data(), called in D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php on line 210 and defined D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 242 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Admin' AND `c` = 'Index' AND `a` = 'login' AND `data` = '' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Admin' AND `c` = 'Index' AND `a` = 'login' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 2 for Admin\Classes\AdminController::error(), called in D:\Program Files\PHPStudy\WWW\Modules\Admin\Controller\IndexController.class.php on line 36 and defined D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 378 行.
+NOTIC: [8] Undefined variable: dialog_theme D:\Program Files\PHPStudy\WWW\Public\tpl\error.htm 第 9 行.
+NOTIC: [8] Undefined variable: jumpUrl D:\Program Files\PHPStudy\WWW\Public\tpl\error.htm 第 38 行.
+NOTIC: [8] Undefined variable: jumpUrl D:\Program Files\PHPStudy\WWW\Public\tpl\error.htm 第 40 行.
+
+[ 2016-04-08T10:13:48+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0156s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.062500s ]
+SQL: SELECT * FROM `fc_admin_setting` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_cache` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_cache` WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\Program Files\PHPStudy\WWW\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `fc_admin_cache` SET `name`='bfa226da317a2ec6552f24bcfdd197dd',`title`='缓存',`namespace`='Admin\\Model\\SettingModel',`function`='getSetting',`args`='a:1:{i:0;i:3;}',`creattime`='1460081628',`long`='0',`clear`='0' WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' [ RunTime:0.0000s ]
+INFO: Run Content\Behavior\RouteBehavior [ RunTime:0.015625s ]
+INFO: [ app_init ] --END-- [ RunTime:0.078125s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Admin\Behavior\RecordBeginBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::error() should be compatible with that of Think\Controller::error() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::success() should be compatible with that of Think\Controller::success() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+
+[ 2016-04-08T10:13:48+08:00 ] 127.0.0.1 /Admin/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.031250s ]
+SQL: SELECT * FROM `fc_admin_setting` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_cache` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_cache` WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\Program Files\PHPStudy\WWW\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `fc_admin_cache` SET `name`='bfa226da317a2ec6552f24bcfdd197dd',`title`='缓存',`namespace`='Admin\\Model\\SettingModel',`function`='getSetting',`args`='a:1:{i:0;i:3;}',`creattime`='1460081628',`long`='0',`clear`='0' WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' [ RunTime:0.0000s ]
+INFO: Run Content\Behavior\RouteBehavior [ RunTime:0.015625s ]
+INFO: [ app_init ] --END-- [ RunTime:0.046875s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Admin\Behavior\RecordBeginBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::error() should be compatible with that of Think\Controller::error() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::success() should be compatible with that of Think\Controller::success() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+NOTIC: [2] Missing argument 1 for Admin\Classes\AdminController::_get_data(), called in D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php on line 66 and defined D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 242 行.
+SQL: SHOW COLUMNS FROM `fc_admin_menu` [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Admin\Classes\AdminController::_get_data(), called in D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php on line 210 and defined D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 242 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Admin' AND `c` = 'Index' AND `a` = 'login' AND `data` = '' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Admin' AND `c` = 'Index' AND `a` = 'login' AND `project6` = 1 LIMIT 1   [ RunTime:0.0156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: Run Admin\Behavior\RecordEndBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-08T10:13:48+08:00 ] 127.0.0.1 /Admin/Api/verify/t/1460081628.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.078125s ]
+SQL: SELECT * FROM `fc_admin_setting` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_cache` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_cache` WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\Program Files\PHPStudy\WWW\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `fc_admin_cache` SET `name`='bfa226da317a2ec6552f24bcfdd197dd',`title`='缓存',`namespace`='Admin\\Model\\SettingModel',`function`='getSetting',`args`='a:1:{i:0;i:3;}',`creattime`='1460081628',`long`='0',`clear`='0' WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' [ RunTime:0.0000s ]
+INFO: Run Content\Behavior\RouteBehavior [ RunTime:0.015625s ]
+INFO: [ app_init ] --END-- [ RunTime:0.093750s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Admin\Behavior\RecordBeginBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: Run Admin\Behavior\RecordEndBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2016-04-08T10:14:04+08:00 ] 127.0.0.1 /Admin/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0156s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.046875s ]
+SQL: SELECT * FROM `fc_admin_setting` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_cache` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_cache` WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\Program Files\PHPStudy\WWW\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `fc_admin_cache` SET `name`='bfa226da317a2ec6552f24bcfdd197dd',`title`='缓存',`namespace`='Admin\\Model\\SettingModel',`function`='getSetting',`args`='a:1:{i:0;i:3;}',`creattime`='1460081644',`long`='0',`clear`='0' WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' [ RunTime:0.0000s ]
+INFO: Run Content\Behavior\RouteBehavior [ RunTime:0.015625s ]
+INFO: [ app_init ] --END-- [ RunTime:0.062500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Admin\Behavior\RecordBeginBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::error() should be compatible with that of Think\Controller::error() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::success() should be compatible with that of Think\Controller::success() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+NOTIC: [2] Missing argument 1 for Admin\Classes\AdminController::_get_data(), called in D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php on line 66 and defined D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 242 行.
+SQL: SHOW COLUMNS FROM `fc_admin_menu` [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Admin\Classes\AdminController::_get_data(), called in D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php on line 210 and defined D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 242 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Admin' AND `c` = 'Index' AND `a` = 'login' AND `data` = '' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Admin' AND `c` = 'Index' AND `a` = 'login' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_admin` [ RunTime:0.0625s ]
+SQL: SELECT `encrypt`,`password`,`userid`,`group_id`,`title`,`constraint`,`usertype` FROM fc_admin as a LEFT JOIN fc_auth_group_access ON fc_auth_group_access.uid=a.userid  LEFT JOIN fc_auth_group ON fc_auth_group.id=fc_auth_group_access.group_id   WHERE a.username = 'leo' AND a.status = 1 LIMIT 1   [ RunTime:0.0625s ]
+NOTIC: [2] curl_error(): 54 is not a valid cURL handle resource D:\Program Files\PHPStudy\WWW\ThinkPHP\Library\Org\Net\taobaoIp.class.php 第 28 行.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\Program Files\PHPStudy\WWW\ThinkPHP\Library\Org\Net\taobaoIp.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `fc_admin_login` [ RunTime:0.0156s ]
+SQL: INSERT INTO `fc_admin_login` (`uid`,`time`,`ip`,`area`) VALUES ('1','1460081644','127.0.0.1',' ---') [ RunTime:0.0156s ]
+NOTIC: [8] Undefined variable: dialog_theme D:\Program Files\PHPStudy\WWW\Public\tpl\success.htm 第 9 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_behavior` [ RunTime:0.0469s ]
+SQL: INSERT INTO `fc_admin_behavior` (`uid`,`timelong`,`memory`,`time`,`date1`,`date2`,`m`,`c`,`a`,`ip`,`data`) VALUES ('1','0.3125','540','1460081644','2016-04-08','2016-04-08 10','Admin','Index','login','127.0.0.1','') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\RecordEndBehavior [ RunTime:0.046875s ]
+INFO: [ app_end ] --END-- [ RunTime:0.046875s ]
+
+[ 2016-04-08T10:14:06+08:00 ] 127.0.0.1 /Admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0156s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.078125s ]
+SQL: SELECT * FROM `fc_admin_setting` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_cache` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_cache` WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\Program Files\PHPStudy\WWW\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `fc_admin_cache` SET `name`='bfa226da317a2ec6552f24bcfdd197dd',`title`='缓存',`namespace`='Admin\\Model\\SettingModel',`function`='getSetting',`args`='a:1:{i:0;i:3;}',`creattime`='1460081645',`long`='0',`clear`='0' WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' [ RunTime:0.0000s ]
+INFO: Run Content\Behavior\RouteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.093750s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Admin\Behavior\RecordBeginBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::error() should be compatible with that of Think\Controller::error() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::success() should be compatible with that of Think\Controller::success() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `fc_admin_menu` [ RunTime:0.0156s ]
+NOTIC: [2] Missing argument 1 for Admin\Classes\AdminController::_get_data(), called in D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php on line 210 and defined D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 242 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Admin' AND `c` = 'Index' AND `a` = 'index' AND `data` = '' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Admin' AND `c` = 'Index' AND `a` = 'index' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fc_admin_menu` WHERE `parentid` = 0 AND `display` = 1 AND `id` <> 194 ORDER BY listorder DESC,id DESC  [ RunTime:0.0469s ]
+SQL: SHOW COLUMNS FROM `fc_admin_panel` [ RunTime:0.0313s ]
+SQL: SELECT * FROM `fc_admin_panel` LEFT JOIN fc_admin_menu ON fc_admin_menu.id =fc_admin_panel.menuid  WHERE `userid` = '1' LIMIT 10   [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for load_artdialog(), called in D:\Program Files\PHPStudy\WWW\Modules\Admin\templates\Index\index.php on line 18 and defined D:\Program Files\PHPStudy\WWW\Common\load_front_plug.php 第 39 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_behavior` [ RunTime:0.0313s ]
+SQL: INSERT INTO `fc_admin_behavior` (`uid`,`timelong`,`memory`,`time`,`date1`,`date2`,`m`,`c`,`a`,`ip`,`data`) VALUES ('1','0.09375','433','1460081646','2016-04-08','2016-04-08 10','Admin','Index','index','127.0.0.1','') [ RunTime:0.0156s ]
+INFO: Run Admin\Behavior\RecordEndBehavior [ RunTime:0.046875s ]
+INFO: [ app_end ] --END-- [ RunTime:0.046875s ]
+
+[ 2016-04-08T10:14:06+08:00 ] 127.0.0.1 /Admin/Index/firstPage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0313s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.140625s ]
+SQL: SELECT * FROM `fc_admin_setting` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_cache` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_cache` WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\Program Files\PHPStudy\WWW\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `fc_admin_cache` SET `name`='bfa226da317a2ec6552f24bcfdd197dd',`title`='缓存',`namespace`='Admin\\Model\\SettingModel',`function`='getSetting',`args`='a:1:{i:0;i:3;}',`creattime`='1460081646',`long`='0',`clear`='0' WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' [ RunTime:0.0000s ]
+INFO: Run Content\Behavior\RouteBehavior [ RunTime:0.031250s ]
+INFO: [ app_init ] --END-- [ RunTime:0.171875s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Admin\Behavior\RecordBeginBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::error() should be compatible with that of Think\Controller::error() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::success() should be compatible with that of Think\Controller::success() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `fc_admin_menu` [ RunTime:0.0156s ]
+NOTIC: [2] Missing argument 1 for Admin\Classes\AdminController::_get_data(), called in D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php on line 210 and defined D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 242 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Admin' AND `c` = 'Index' AND `a` = 'firstPage' AND `data` = '' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Admin' AND `c` = 'Index' AND `a` = 'firstPage' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_login` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `fc_admin_login` WHERE ( uid=1 ) ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_admin` [ RunTime:0.0000s ]
+SQL: SELECT `ishead` FROM `fc_admin` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_behavior` [ RunTime:0.0156s ]
+SQL: INSERT INTO `fc_admin_behavior` (`uid`,`timelong`,`memory`,`time`,`date1`,`date2`,`m`,`c`,`a`,`ip`,`data`) VALUES ('1','0.046875','431','1460081646','2016-04-08','2016-04-08 10','Admin','Index','firstPage','127.0.0.1','') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\RecordEndBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2016-04-08T10:14:06+08:00 ] 127.0.0.1 /Admin/Index/menuLeft.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.078125s ]
+SQL: SELECT * FROM `fc_admin_setting` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_cache` [ RunTime:0.0313s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_cache` WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\Program Files\PHPStudy\WWW\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `fc_admin_cache` SET `name`='bfa226da317a2ec6552f24bcfdd197dd',`title`='缓存',`namespace`='Admin\\Model\\SettingModel',`function`='getSetting',`args`='a:1:{i:0;i:3;}',`creattime`='1460081646',`long`='0',`clear`='0' WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' [ RunTime:0.0000s ]
+INFO: Run Content\Behavior\RouteBehavior [ RunTime:0.031250s ]
+INFO: [ app_init ] --END-- [ RunTime:0.109375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Admin\Behavior\RecordBeginBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::error() should be compatible with that of Think\Controller::error() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::success() should be compatible with that of Think\Controller::success() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `fc_admin_menu` [ RunTime:0.0156s ]
+NOTIC: [2] Missing argument 1 for Admin\Classes\AdminController::_get_data(), called in D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php on line 210 and defined D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 242 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Admin' AND `c` = 'Index' AND `a` = 'menuLeft' AND `data` = '' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Admin' AND `c` = 'Index' AND `a` = 'menuLeft' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: menuid D:\Program Files\PHPStudy\WWW\Modules\Admin\Controller\IndexController.class.php 第 148 行.
+SQL: SELECT * FROM `fc_admin_menu` WHERE `parentid` = 0 AND `display` = 1 AND `id` <> 194 ORDER BY listorder DESC,id DESC  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fc_admin_menu` WHERE `parentid` = 62 AND `display` = 1 ORDER BY listorder DESC,id DESC  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fc_admin_menu` WHERE `parentid` = 467 AND `display` = 1 ORDER BY listorder DESC,id DESC  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fc_admin_menu` WHERE `parentid` = 63 AND `display` = 1 ORDER BY listorder DESC,id DESC  [ RunTime:0.0156s ]
+SQL: SELECT * FROM `fc_admin_menu` WHERE `parentid` = 142 AND `display` = 1 ORDER BY listorder DESC,id DESC  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fc_admin_menu` WHERE `parentid` = 73 AND `display` = 1 ORDER BY listorder DESC,id DESC  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `fc_admin_behavior` [ RunTime:0.0000s ]
+SQL: INSERT INTO `fc_admin_behavior` (`uid`,`timelong`,`memory`,`time`,`date1`,`date2`,`m`,`c`,`a`,`ip`,`data`) VALUES ('1','0.109375','429','1460081646','2016-04-08','2016-04-08 10','Admin','Index','menuLeft','127.0.0.1','') [ RunTime:0.0156s ]
+INFO: Run Admin\Behavior\RecordEndBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.031250s ]
+
+[ 2016-04-08T10:14:07+08:00 ] 127.0.0.1 /index.php?m=Admin&c=index&a=menuLeft&menuid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0156s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.062500s ]
+SQL: SELECT * FROM `fc_admin_setting` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_cache` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_cache` WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\Program Files\PHPStudy\WWW\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `fc_admin_cache` SET `name`='bfa226da317a2ec6552f24bcfdd197dd',`title`='缓存',`namespace`='Admin\\Model\\SettingModel',`function`='getSetting',`args`='a:1:{i:0;i:3;}',`creattime`='1460081647',`long`='0',`clear`='0' WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' [ RunTime:0.0156s ]
+INFO: Run Content\Behavior\RouteBehavior [ RunTime:0.031250s ]
+INFO: [ app_init ] --END-- [ RunTime:0.093750s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Admin\Behavior\RecordBeginBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::error() should be compatible with that of Think\Controller::error() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::success() should be compatible with that of Think\Controller::success() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `fc_admin_menu` [ RunTime:0.0156s ]
+NOTIC: [2] Missing argument 1 for Admin\Classes\AdminController::_get_data(), called in D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php on line 210 and defined D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 242 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Admin' AND `c` = 'Index' AND `a` = 'menuLeft' AND `data` = '' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Admin' AND `c` = 'Index' AND `a` = 'menuLeft' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fc_admin_menu` WHERE `parentid` = 1 AND `display` = 1 ORDER BY listorder DESC,id DESC  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fc_admin_menu` WHERE `parentid` = 5 AND `display` = 1 ORDER BY listorder DESC,id DESC  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fc_admin_menu` WHERE `parentid` = 2 AND `display` = 1 ORDER BY listorder DESC,id DESC  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_behavior` [ RunTime:0.0156s ]
+SQL: INSERT INTO `fc_admin_behavior` (`uid`,`timelong`,`memory`,`time`,`date1`,`date2`,`m`,`c`,`a`,`ip`,`data`) VALUES ('1','0.046875','429','1460081647','2016-04-08','2016-04-08 10','Admin','Index','menuLeft','127.0.0.1','menuid/1') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\RecordEndBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2016-04-08T10:14:07+08:00 ] 127.0.0.1 /Admin/System/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0156s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.078125s ]
+SQL: SELECT * FROM `fc_admin_setting` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_cache` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_cache` WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\Program Files\PHPStudy\WWW\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `fc_admin_cache` SET `name`='bfa226da317a2ec6552f24bcfdd197dd',`title`='缓存',`namespace`='Admin\\Model\\SettingModel',`function`='getSetting',`args`='a:1:{i:0;i:3;}',`creattime`='1460081647',`long`='0',`clear`='0' WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' [ RunTime:0.0000s ]
+INFO: Run Content\Behavior\RouteBehavior [ RunTime:0.031250s ]
+INFO: [ app_init ] --END-- [ RunTime:0.109375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Admin\Behavior\RecordBeginBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::error() should be compatible with that of Think\Controller::error() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::success() should be compatible with that of Think\Controller::success() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `fc_admin_menu` [ RunTime:0.0156s ]
+NOTIC: [2] Missing argument 1 for Admin\Classes\AdminController::_get_data(), called in D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php on line 210 and defined D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 242 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Admin' AND `c` = 'System' AND `a` = 'index' AND `data` = '' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Admin' AND `c` = 'System' AND `a` = 'index' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: select VERSION() as version [ RunTime:0.0313s ]
+SQL: SHOW COLUMNS FROM `fc_admin_behavior` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: cycle D:\Program Files\PHPStudy\WWW\Modules\Admin\Controller\SystemController.class.php 第 13 行.
+SQL: SELECT AVG(timelong) as avg,SUM(timelong) as sum,`date2`,`date1` FROM `fc_admin_behavior` WHERE `time` > 1460044800 GROUP BY date2 ORDER BY date2 asc  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+SQL: INSERT INTO `fc_admin_behavior` (`uid`,`timelong`,`memory`,`time`,`date1`,`date2`,`m`,`c`,`a`,`ip`,`data`) VALUES ('1','0.109375','348','1460081647','2016-04-08','2016-04-08 10','Admin','System','index','127.0.0.1','') [ RunTime:0.0156s ]
+INFO: Run Admin\Behavior\RecordEndBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2016-04-08T10:14:11+08:00 ] 127.0.0.1 /index.php?m=Admin&c=index&a=menuLeft&menuid=62
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.078125s ]
+SQL: SELECT * FROM `fc_admin_setting` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_cache` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_cache` WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\Program Files\PHPStudy\WWW\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `fc_admin_cache` SET `name`='bfa226da317a2ec6552f24bcfdd197dd',`title`='缓存',`namespace`='Admin\\Model\\SettingModel',`function`='getSetting',`args`='a:1:{i:0;i:3;}',`creattime`='1460081650',`long`='0',`clear`='0' WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' [ RunTime:0.0156s ]
+INFO: Run Content\Behavior\RouteBehavior [ RunTime:0.046875s ]
+INFO: [ app_init ] --END-- [ RunTime:0.125000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: Run Admin\Behavior\RecordBeginBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::error() should be compatible with that of Think\Controller::error() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::success() should be compatible with that of Think\Controller::success() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `fc_admin_menu` [ RunTime:0.0313s ]
+NOTIC: [2] Missing argument 1 for Admin\Classes\AdminController::_get_data(), called in D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php on line 210 and defined D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 242 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Admin' AND `c` = 'Index' AND `a` = 'menuLeft' AND `data` = '' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Admin' AND `c` = 'Index' AND `a` = 'menuLeft' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fc_admin_menu` WHERE `parentid` = 62 AND `display` = 1 ORDER BY listorder DESC,id DESC  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fc_admin_menu` WHERE `parentid` = 467 AND `display` = 1 ORDER BY listorder DESC,id DESC  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fc_admin_menu` WHERE `parentid` = 63 AND `display` = 1 ORDER BY listorder DESC,id DESC  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fc_admin_menu` WHERE `parentid` = 142 AND `display` = 1 ORDER BY listorder DESC,id DESC  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fc_admin_menu` WHERE `parentid` = 73 AND `display` = 1 ORDER BY listorder DESC,id DESC  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_behavior` [ RunTime:0.0313s ]
+SQL: INSERT INTO `fc_admin_behavior` (`uid`,`timelong`,`memory`,`time`,`date1`,`date2`,`m`,`c`,`a`,`ip`,`data`) VALUES ('1','0.09375','429','1460081651','2016-04-08','2016-04-08 10','Admin','Index','menuLeft','127.0.0.1','menuid/62') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\RecordEndBehavior [ RunTime:0.031250s ]
+INFO: [ app_end ] --END-- [ RunTime:0.031250s ]
+
+[ 2016-04-08T10:14:11+08:00 ] 127.0.0.1 /Admin/Index/firstPage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0313s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.093750s ]
+SQL: SELECT * FROM `fc_admin_setting` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_cache` [ RunTime:0.0313s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_cache` WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\Program Files\PHPStudy\WWW\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `fc_admin_cache` SET `name`='bfa226da317a2ec6552f24bcfdd197dd',`title`='缓存',`namespace`='Admin\\Model\\SettingModel',`function`='getSetting',`args`='a:1:{i:0;i:3;}',`creattime`='1460081651',`long`='0',`clear`='0' WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' [ RunTime:0.0000s ]
+INFO: Run Content\Behavior\RouteBehavior [ RunTime:0.046875s ]
+INFO: [ app_init ] --END-- [ RunTime:0.140625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Admin\Behavior\RecordBeginBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::error() should be compatible with that of Think\Controller::error() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::success() should be compatible with that of Think\Controller::success() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `fc_admin_menu` [ RunTime:0.0156s ]
+NOTIC: [2] Missing argument 1 for Admin\Classes\AdminController::_get_data(), called in D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php on line 210 and defined D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 242 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Admin' AND `c` = 'Index' AND `a` = 'firstPage' AND `data` = '' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Admin' AND `c` = 'Index' AND `a` = 'firstPage' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_login` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fc_admin_login` WHERE ( uid=1 ) ORDER BY id desc LIMIT 1   [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `fc_admin` [ RunTime:0.0156s ]
+SQL: SELECT `ishead` FROM `fc_admin` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_behavior` [ RunTime:0.0156s ]
+SQL: INSERT INTO `fc_admin_behavior` (`uid`,`timelong`,`memory`,`time`,`date1`,`date2`,`m`,`c`,`a`,`ip`,`data`) VALUES ('1','0.078125','431','1460081651','2016-04-08','2016-04-08 10','Admin','Index','firstPage','127.0.0.1','') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\RecordEndBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2016-04-08T10:14:12+08:00 ] 127.0.0.1 /index.php?m=Admin&c=index&a=menuLeft&menuid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0156s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.062500s ]
+SQL: SELECT * FROM `fc_admin_setting` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_cache` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_cache` WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\Program Files\PHPStudy\WWW\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `fc_admin_cache` SET `name`='bfa226da317a2ec6552f24bcfdd197dd',`title`='缓存',`namespace`='Admin\\Model\\SettingModel',`function`='getSetting',`args`='a:1:{i:0;i:3;}',`creattime`='1460081652',`long`='0',`clear`='0' WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' [ RunTime:0.0000s ]
+INFO: Run Content\Behavior\RouteBehavior [ RunTime:0.015625s ]
+INFO: [ app_init ] --END-- [ RunTime:0.078125s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Admin\Behavior\RecordBeginBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::error() should be compatible with that of Think\Controller::error() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::success() should be compatible with that of Think\Controller::success() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `fc_admin_menu` [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Admin\Classes\AdminController::_get_data(), called in D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php on line 210 and defined D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 242 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Admin' AND `c` = 'Index' AND `a` = 'menuLeft' AND `data` = '' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Admin' AND `c` = 'Index' AND `a` = 'menuLeft' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fc_admin_menu` WHERE `parentid` = 1 AND `display` = 1 ORDER BY listorder DESC,id DESC  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fc_admin_menu` WHERE `parentid` = 5 AND `display` = 1 ORDER BY listorder DESC,id DESC  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fc_admin_menu` WHERE `parentid` = 2 AND `display` = 1 ORDER BY listorder DESC,id DESC  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_behavior` [ RunTime:0.0000s ]
+SQL: INSERT INTO `fc_admin_behavior` (`uid`,`timelong`,`memory`,`time`,`date1`,`date2`,`m`,`c`,`a`,`ip`,`data`) VALUES ('1','0.03125','429','1460081652','2016-04-08','2016-04-08 10','Admin','Index','menuLeft','127.0.0.1','menuid/1') [ RunTime:0.0156s ]
+INFO: Run Admin\Behavior\RecordEndBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2016-04-08T10:14:12+08:00 ] 127.0.0.1 /Admin/System/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0156s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.046875s ]
+SQL: SELECT * FROM `fc_admin_setting` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_cache` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_cache` WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\Program Files\PHPStudy\WWW\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `fc_admin_cache` SET `name`='bfa226da317a2ec6552f24bcfdd197dd',`title`='缓存',`namespace`='Admin\\Model\\SettingModel',`function`='getSetting',`args`='a:1:{i:0;i:3;}',`creattime`='1460081652',`long`='0',`clear`='0' WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' [ RunTime:0.0000s ]
+INFO: Run Content\Behavior\RouteBehavior [ RunTime:0.015625s ]
+INFO: [ app_init ] --END-- [ RunTime:0.062500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Admin\Behavior\RecordBeginBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::error() should be compatible with that of Think\Controller::error() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::success() should be compatible with that of Think\Controller::success() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `fc_admin_menu` [ RunTime:0.0156s ]
+NOTIC: [2] Missing argument 1 for Admin\Classes\AdminController::_get_data(), called in D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php on line 210 and defined D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 242 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Admin' AND `c` = 'System' AND `a` = 'index' AND `data` = '' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Admin' AND `c` = 'System' AND `a` = 'index' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: select VERSION() as version [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_behavior` [ RunTime:0.0156s ]
+NOTIC: [8] Undefined index: cycle D:\Program Files\PHPStudy\WWW\Modules\Admin\Controller\SystemController.class.php 第 13 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+SQL: INSERT INTO `fc_admin_behavior` (`uid`,`timelong`,`memory`,`time`,`date1`,`date2`,`m`,`c`,`a`,`ip`,`data`) VALUES ('1','0.0625','351','1460081652','2016-04-08','2016-04-08 10','Admin','System','index','127.0.0.1','') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\RecordEndBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-08T10:14:14+08:00 ] 127.0.0.1 /index.php?m=Admin&c=index&a=menuLeft&menuid=62
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0156s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.078125s ]
+SQL: SELECT * FROM `fc_admin_setting` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_cache` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_cache` WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\Program Files\PHPStudy\WWW\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `fc_admin_cache` SET `name`='bfa226da317a2ec6552f24bcfdd197dd',`title`='缓存',`namespace`='Admin\\Model\\SettingModel',`function`='getSetting',`args`='a:1:{i:0;i:3;}',`creattime`='1460081654',`long`='0',`clear`='0' WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' [ RunTime:0.0156s ]
+INFO: Run Content\Behavior\RouteBehavior [ RunTime:0.031250s ]
+INFO: [ app_init ] --END-- [ RunTime:0.109375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: Run Admin\Behavior\RecordBeginBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::error() should be compatible with that of Think\Controller::error() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::success() should be compatible with that of Think\Controller::success() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `fc_admin_menu` [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Admin\Classes\AdminController::_get_data(), called in D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php on line 210 and defined D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 242 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Admin' AND `c` = 'Index' AND `a` = 'menuLeft' AND `data` = '' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Admin' AND `c` = 'Index' AND `a` = 'menuLeft' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fc_admin_menu` WHERE `parentid` = 62 AND `display` = 1 ORDER BY listorder DESC,id DESC  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fc_admin_menu` WHERE `parentid` = 467 AND `display` = 1 ORDER BY listorder DESC,id DESC  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fc_admin_menu` WHERE `parentid` = 63 AND `display` = 1 ORDER BY listorder DESC,id DESC  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fc_admin_menu` WHERE `parentid` = 142 AND `display` = 1 ORDER BY listorder DESC,id DESC  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fc_admin_menu` WHERE `parentid` = 73 AND `display` = 1 ORDER BY listorder DESC,id DESC  [ RunTime:0.0156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_behavior` [ RunTime:0.0156s ]
+SQL: INSERT INTO `fc_admin_behavior` (`uid`,`timelong`,`memory`,`time`,`date1`,`date2`,`m`,`c`,`a`,`ip`,`data`) VALUES ('1','0.046875','429','1460081654','2016-04-08','2016-04-08 10','Admin','Index','menuLeft','127.0.0.1','menuid/62') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\RecordEndBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2016-04-08T10:14:14+08:00 ] 127.0.0.1 /Admin/Index/firstPage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0313s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.078125s ]
+SQL: SELECT * FROM `fc_admin_setting` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_cache` [ RunTime:0.0313s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_cache` WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\Program Files\PHPStudy\WWW\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `fc_admin_cache` SET `name`='bfa226da317a2ec6552f24bcfdd197dd',`title`='缓存',`namespace`='Admin\\Model\\SettingModel',`function`='getSetting',`args`='a:1:{i:0;i:3;}',`creattime`='1460081654',`long`='0',`clear`='0' WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' [ RunTime:0.0000s ]
+INFO: Run Content\Behavior\RouteBehavior [ RunTime:0.031250s ]
+INFO: [ app_init ] --END-- [ RunTime:0.109375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Admin\Behavior\RecordBeginBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::error() should be compatible with that of Think\Controller::error() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::success() should be compatible with that of Think\Controller::success() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `fc_admin_menu` [ RunTime:0.0156s ]
+NOTIC: [2] Missing argument 1 for Admin\Classes\AdminController::_get_data(), called in D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php on line 210 and defined D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 242 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Admin' AND `c` = 'Index' AND `a` = 'firstPage' AND `data` = '' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Admin' AND `c` = 'Index' AND `a` = 'firstPage' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_login` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `fc_admin_login` WHERE ( uid=1 ) ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_admin` [ RunTime:0.0156s ]
+SQL: SELECT `ishead` FROM `fc_admin` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `fc_admin_behavior` [ RunTime:0.0000s ]
+SQL: INSERT INTO `fc_admin_behavior` (`uid`,`timelong`,`memory`,`time`,`date1`,`date2`,`m`,`c`,`a`,`ip`,`data`) VALUES ('1','0.078125','431','1460081654','2016-04-08','2016-04-08 10','Admin','Index','firstPage','127.0.0.1','') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\RecordEndBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2016-04-08T10:14:32+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Index&a=current_pos&menuid=468
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0313s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.109375s ]
+SQL: SELECT * FROM `fc_admin_setting` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_cache` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_cache` WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\Program Files\PHPStudy\WWW\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `fc_admin_cache` SET `name`='bfa226da317a2ec6552f24bcfdd197dd',`title`='缓存',`namespace`='Admin\\Model\\SettingModel',`function`='getSetting',`args`='a:1:{i:0;i:3;}',`creattime`='1460081672',`long`='0',`clear`='0' WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' [ RunTime:0.0000s ]
+INFO: Run Content\Behavior\RouteBehavior [ RunTime:0.015625s ]
+INFO: [ app_init ] --END-- [ RunTime:0.125000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Admin\Behavior\RecordBeginBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::error() should be compatible with that of Think\Controller::error() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::success() should be compatible with that of Think\Controller::success() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `fc_admin_menu` [ RunTime:0.0156s ]
+NOTIC: [2] Missing argument 1 for Admin\Classes\AdminController::_get_data(), called in D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php on line 210 and defined D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 242 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Admin' AND `c` = 'Index' AND `a` = 'current_pos' AND `data` = '' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Admin' AND `c` = 'Index' AND `a` = 'current_pos' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name`,`parentid` FROM `fc_admin_menu` WHERE `id` = 468 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name`,`parentid` FROM `fc_admin_menu` WHERE `id` = 467 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name`,`parentid` FROM `fc_admin_menu` WHERE `id` = 62 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: Run Admin\Behavior\RecordEndBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-08T10:14:36+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Index&a=current_pos&menuid=74
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0156s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.093750s ]
+SQL: SELECT * FROM `fc_admin_setting` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_cache` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_cache` WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\Program Files\PHPStudy\WWW\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `fc_admin_cache` SET `name`='bfa226da317a2ec6552f24bcfdd197dd',`title`='缓存',`namespace`='Admin\\Model\\SettingModel',`function`='getSetting',`args`='a:1:{i:0;i:3;}',`creattime`='1460081676',`long`='0',`clear`='0' WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' [ RunTime:0.0000s ]
+INFO: Run Content\Behavior\RouteBehavior [ RunTime:0.015625s ]
+INFO: [ app_init ] --END-- [ RunTime:0.109375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Admin\Behavior\RecordBeginBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::error() should be compatible with that of Think\Controller::error() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::success() should be compatible with that of Think\Controller::success() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `fc_admin_menu` [ RunTime:0.0156s ]
+NOTIC: [2] Missing argument 1 for Admin\Classes\AdminController::_get_data(), called in D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php on line 210 and defined D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 242 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Admin' AND `c` = 'Index' AND `a` = 'current_pos' AND `data` = '' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Admin' AND `c` = 'Index' AND `a` = 'current_pos' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name`,`parentid` FROM `fc_admin_menu` WHERE `id` = 74 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name`,`parentid` FROM `fc_admin_menu` WHERE `id` = 63 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name`,`parentid` FROM `fc_admin_menu` WHERE `id` = 62 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: Run Admin\Behavior\RecordEndBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-08T10:15:52+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Index&a=current_pos&menuid=468
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0156s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.093750s ]
+SQL: SELECT * FROM `fc_admin_setting` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_cache` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_cache` WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\Program Files\PHPStudy\WWW\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `fc_admin_cache` SET `name`='bfa226da317a2ec6552f24bcfdd197dd',`title`='缓存',`namespace`='Admin\\Model\\SettingModel',`function`='getSetting',`args`='a:1:{i:0;i:3;}',`creattime`='1460081752',`long`='0',`clear`='0' WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' [ RunTime:0.0000s ]
+INFO: Run Content\Behavior\RouteBehavior [ RunTime:0.015625s ]
+INFO: [ app_init ] --END-- [ RunTime:0.109375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: Run Admin\Behavior\RecordBeginBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::error() should be compatible with that of Think\Controller::error() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::success() should be compatible with that of Think\Controller::success() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `fc_admin_menu` [ RunTime:0.0156s ]
+NOTIC: [2] Missing argument 1 for Admin\Classes\AdminController::_get_data(), called in D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php on line 210 and defined D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 242 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Admin' AND `c` = 'Index' AND `a` = 'current_pos' AND `data` = '' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Admin' AND `c` = 'Index' AND `a` = 'current_pos' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name`,`parentid` FROM `fc_admin_menu` WHERE `id` = 468 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name`,`parentid` FROM `fc_admin_menu` WHERE `id` = 467 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name`,`parentid` FROM `fc_admin_menu` WHERE `id` = 62 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: Run Admin\Behavior\RecordEndBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-08T10:20:41+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Index&a=current_pos&menuid=216
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0156s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.046875s ]
+SQL: SELECT * FROM `fc_admin_setting` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_cache` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_cache` WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\Program Files\PHPStudy\WWW\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `fc_admin_cache` SET `name`='bfa226da317a2ec6552f24bcfdd197dd',`title`='缓存',`namespace`='Admin\\Model\\SettingModel',`function`='getSetting',`args`='a:1:{i:0;i:3;}',`creattime`='1460082041',`long`='0',`clear`='0' WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' [ RunTime:0.0000s ]
+INFO: Run Content\Behavior\RouteBehavior [ RunTime:0.015625s ]
+INFO: [ app_init ] --END-- [ RunTime:0.078125s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: Run Admin\Behavior\RecordBeginBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::error() should be compatible with that of Think\Controller::error() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::success() should be compatible with that of Think\Controller::success() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `fc_admin_menu` [ RunTime:0.0156s ]
+NOTIC: [2] Missing argument 1 for Admin\Classes\AdminController::_get_data(), called in D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php on line 210 and defined D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 242 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Admin' AND `c` = 'Index' AND `a` = 'current_pos' AND `data` = '' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Admin' AND `c` = 'Index' AND `a` = 'current_pos' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name`,`parentid` FROM `fc_admin_menu` WHERE `id` = 216 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name`,`parentid` FROM `fc_admin_menu` WHERE `id` = 142 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name`,`parentid` FROM `fc_admin_menu` WHERE `id` = 62 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: Run Admin\Behavior\RecordEndBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-08T10:20:42+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Index&a=current_pos&menuid=214
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0156s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.078125s ]
+SQL: SELECT * FROM `fc_admin_setting` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_cache` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_cache` WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\Program Files\PHPStudy\WWW\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `fc_admin_cache` SET `name`='bfa226da317a2ec6552f24bcfdd197dd',`title`='缓存',`namespace`='Admin\\Model\\SettingModel',`function`='getSetting',`args`='a:1:{i:0;i:3;}',`creattime`='1460082042',`long`='0',`clear`='0' WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' [ RunTime:0.0000s ]
+INFO: Run Content\Behavior\RouteBehavior [ RunTime:0.015625s ]
+INFO: [ app_init ] --END-- [ RunTime:0.093750s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Admin\Behavior\RecordBeginBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::error() should be compatible with that of Think\Controller::error() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::success() should be compatible with that of Think\Controller::success() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `fc_admin_menu` [ RunTime:0.0156s ]
+NOTIC: [2] Missing argument 1 for Admin\Classes\AdminController::_get_data(), called in D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php on line 210 and defined D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 242 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Admin' AND `c` = 'Index' AND `a` = 'current_pos' AND `data` = '' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Admin' AND `c` = 'Index' AND `a` = 'current_pos' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name`,`parentid` FROM `fc_admin_menu` WHERE `id` = 214 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name`,`parentid` FROM `fc_admin_menu` WHERE `id` = 142 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name`,`parentid` FROM `fc_admin_menu` WHERE `id` = 62 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: Run Admin\Behavior\RecordEndBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-08T10:20:43+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Index&a=current_pos&menuid=216
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.046875s ]
+SQL: SELECT * FROM `fc_admin_setting` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_cache` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_cache` WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\Program Files\PHPStudy\WWW\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `fc_admin_cache` SET `name`='bfa226da317a2ec6552f24bcfdd197dd',`title`='缓存',`namespace`='Admin\\Model\\SettingModel',`function`='getSetting',`args`='a:1:{i:0;i:3;}',`creattime`='1460082043',`long`='0',`clear`='0' WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' [ RunTime:0.0000s ]
+INFO: Run Content\Behavior\RouteBehavior [ RunTime:0.015625s ]
+INFO: [ app_init ] --END-- [ RunTime:0.078125s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Admin\Behavior\RecordBeginBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::error() should be compatible with that of Think\Controller::error() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::success() should be compatible with that of Think\Controller::success() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `fc_admin_menu` [ RunTime:0.0156s ]
+NOTIC: [2] Missing argument 1 for Admin\Classes\AdminController::_get_data(), called in D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php on line 210 and defined D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 242 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Admin' AND `c` = 'Index' AND `a` = 'current_pos' AND `data` = '' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Admin' AND `c` = 'Index' AND `a` = 'current_pos' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name`,`parentid` FROM `fc_admin_menu` WHERE `id` = 216 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name`,`parentid` FROM `fc_admin_menu` WHERE `id` = 142 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name`,`parentid` FROM `fc_admin_menu` WHERE `id` = 62 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: Run Admin\Behavior\RecordEndBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-08T10:20:45+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Index&a=current_pos&menuid=214
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.109375s ]
+SQL: SELECT * FROM `fc_admin_setting` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_cache` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_cache` WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\Program Files\PHPStudy\WWW\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `fc_admin_cache` SET `name`='bfa226da317a2ec6552f24bcfdd197dd',`title`='缓存',`namespace`='Admin\\Model\\SettingModel',`function`='getSetting',`args`='a:1:{i:0;i:3;}',`creattime`='1460082045',`long`='0',`clear`='0' WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' [ RunTime:0.0000s ]
+INFO: Run Content\Behavior\RouteBehavior [ RunTime:0.015625s ]
+INFO: [ app_init ] --END-- [ RunTime:0.125000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Admin\Behavior\RecordBeginBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::error() should be compatible with that of Think\Controller::error() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::success() should be compatible with that of Think\Controller::success() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `fc_admin_menu` [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Admin\Classes\AdminController::_get_data(), called in D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php on line 210 and defined D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 242 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Admin' AND `c` = 'Index' AND `a` = 'current_pos' AND `data` = '' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Admin' AND `c` = 'Index' AND `a` = 'current_pos' AND `project6` = 1 LIMIT 1   [ RunTime:0.0156s ]
+SQL: SELECT `name`,`parentid` FROM `fc_admin_menu` WHERE `id` = 214 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name`,`parentid` FROM `fc_admin_menu` WHERE `id` = 142 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name`,`parentid` FROM `fc_admin_menu` WHERE `id` = 62 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: Run Admin\Behavior\RecordEndBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-08T10:20:49+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Index&a=current_pos&menuid=462
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_setting` [ RunTime:0.0313s ]
+INFO: Run Admin\Behavior\SystemConfigBehavior [ RunTime:0.078125s ]
+SQL: SELECT * FROM `fc_admin_setting` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `fc_admin_cache` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_cache` WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\Program Files\PHPStudy\WWW\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `fc_admin_cache` SET `name`='bfa226da317a2ec6552f24bcfdd197dd',`title`='缓存',`namespace`='Admin\\Model\\SettingModel',`function`='getSetting',`args`='a:1:{i:0;i:3;}',`creattime`='1460082049',`long`='0',`clear`='0' WHERE `name` = 'bfa226da317a2ec6552f24bcfdd197dd' [ RunTime:0.0000s ]
+INFO: Run Content\Behavior\RouteBehavior [ RunTime:0.031250s ]
+INFO: [ app_init ] --END-- [ RunTime:0.109375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Admin\Behavior\RecordBeginBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::error() should be compatible with that of Think\Controller::error() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+NOTIC: [2048] Declaration of Admin\Classes\AdminController::success() should be compatible with that of Think\Controller::success() D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `fc_admin_menu` [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Admin\Classes\AdminController::_get_data(), called in D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php on line 210 and defined D:\Program Files\PHPStudy\WWW\Modules\Admin\Classes\AdminController.class.php 第 242 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Admin' AND `c` = 'Index' AND `a` = 'current_pos' AND `data` = '' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_admin_menu` WHERE `m` = 'Admin' AND `c` = 'Index' AND `a` = 'current_pos' AND `project6` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name`,`parentid` FROM `fc_admin_menu` WHERE `id` = 462 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name`,`parentid` FROM `fc_admin_menu` WHERE `id` = 63 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name`,`parentid` FROM `fc_admin_menu` WHERE `id` = 62 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: Run Admin\Behavior\RecordEndBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
